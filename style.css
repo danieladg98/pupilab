@@ -1,4 +1,4 @@
-body {
+#bd_main {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     background: url(imgs_main/index.jpg) no-repeat center center fixed;
@@ -28,6 +28,17 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
+
+#nav_pt a {
+    color: black;
+}
+
+#nav_pt a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
 
 .main_text {
     margin-top: 23%;
