@@ -1,0 +1,85 @@
+#bd_main {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background: url(../media/images/index.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*overflow-x: hidden; APAGAR NO FIM */
+}
+
+#bd_else {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    /*overflow-x: hidden; APAGAR NO FIM */
+}
+
+.black{
+  color: black  !important;
+}
+
+.white{
+  color: white  !important;
+}
+
+.borderblack{
+  border: 1px solid black !important;
+}
+
+.borderwhite{
+  border: 1px solid white  !important;
+}
+
+#logo {
+    width: 30%;
+    height: auto;
+}
+
+nav {
+    margin-top: 2%;
+}
+
+#navmain a {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+#navmain a:hover {
+    text-decoration: underline;
+}
+
+#navelse a {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: black;
+}
+
+#navelse a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.main_text {
+    margin-top: 23%;
+}
+
+.main_text p {
+    font-size: 1.2rem;
+}
+
+#ver_produtos {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    padding: 0.55% 1.2%;
+}
+
+.botao_main {
+    margin-top: 2.5%;
+}
+
+#seta {
+    border: 1px solid white;
+    padding: 0.55% 0.5%;
+    margin-left: -0.5%;
+}
