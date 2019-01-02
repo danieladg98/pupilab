@@ -16,18 +16,193 @@
     include_once 'parts/navbar.php';
   ?>
 
-    <div class="container-fluid main_text animated fadeInUp slower">
-        <center>
-            <p class="black">Assistência Técnica, Manutenção e Comércio de Aparelhos
-                <br> e Equipamentos Oftalmológicos</p>
-        </center>
+  <?php
+    session_start();
+  ?>
+
+
+  <div class="row" style="width:100%;">
+
+    <div class="col-1"> </div>
+
+    <div class="col-10 bodycontent">
+
+      <div class="row">
+
+        <div class="lateral col-2 submenu">
+            <h2 class="">PRODUTOS</h2>
+            <br>
+            <form method="post" action="">
+              <input type="submit" name="todos" value="Ver Todos"><br>
+              <div >
+                <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="Observação">
+              </div>
+              <div class="collapse collapsesubmenu" id="sub_menu1">
+                  <div class="col-1 in">
+                      <input type="submit" name="imagem" value="Lampadas de Fenda">
+                      <input type="submit" name="imagem" value="Oftalmoscópios">
+                      <input type="submit" name="imagem" value="Retinoscópios">
+                      <input type="submit" name="imagem" value="Retinómetros">
+                  </div>
+              </div>
+
+              <div>
+                <input id="category2" type="button" data-toggle="collapse" data-target="#sub_menu2" aria-expanded="false" aria-controls="sub_menu2" value="Refração">
+              </div>
+              <div class="collapse collapsesubmenu" id="sub_menu2">
+                  <div class="col-1 in">
+                      <input type="submit" name="outro" value="Unidades de Refração">
+                      <input type="submit" name="outro" value="Auto-Refractómetros">
+                      <input type="submit" name="outro" value="Forópteros">
+                      <input type="submit" name="outro" value="Pojectores Optotipos">
+                      <input type="submit" name="outro" value="LCD">
+                      <input type="submit" name="outro" value="Mesas Electricas">
+                      <input type="submit" name="outro" value="Caixa de Lentes">
+                      <input type="submit" name="outro" value="Armações de Prova">
+                      <input type="submit" name="outro" value="Frontofocómetros L/ Interna">
+                      <input type="submit" name="outro" value="Frontofocómetros Digitais">
+                      <input type="submit" name="outro" value="Arkeratómetros">
+                  </div>
+              </div>
+
+              <div>
+                <input id="category3" type="button" data-toggle="collapse" data-target="#sub_menu3" aria-expanded="false" aria-controls="sub_menu3" value="Diagnóstico/Medição">
+              </div>
+              <div class="collapse collapsesubmenu" id="sub_menu3">
+                  <div class="col-1 in">
+                      <input type="submit" name="outro" value="OCT">
+                      <input type="submit" name="outro" value="Paquimetro">
+                      <input type="submit" name="outro" value="Biometro">
+                      <input type="submit" name="outro" value="Topógrafo">
+                      <input type="submit" name="outro" value="Campímetro/Perímetro">
+                      <input type="submit" name="outro" value="Ultrasom">
+                      <input type="submit" name="outro" value="Microscópio Especular">
+                  </div>
+              </div>
+
+              <div>
+                <input id="category4" type="button" data-toggle="collapse" data-target="#sub_menu4" aria-expanded="false" aria-controls="sub_menu4" value="Oficina/Ópticas">
+              </div>
+              <div class="collapse collapsesubmenu" id="sub_menu4">
+                  <div class="col-1 in">
+                      <input type="submit" name="outro" value="Biseladoras">
+                      <input type="submit" name="outro" value="Máquinas/Acabamentos/Ranhuras">
+                      <input type="submit" name="outro" value="Polidoras">
+                      <input type="submit" name="outro" value="Ultrasons">
+                      <input type="submit" name="outro" value="Ventilete">
+                      <input type="submit" name="outro" value="Ferramentas">
+                  </div>
+              </div>
+
+              <div>
+                <input id="category5" type="button" data-toggle="collapse" data-target="#sub_menu5" aria-expanded="false" aria-controls="sub_menu5" value="Lâmpadas">
+              </div>
+              <div class="collapse collapsesubmenu" id="sub_menu5">
+                  <div class="col-1 in">
+                      <input type="submit" name="outro" value="Oftalmoscópio">
+                      <input type="submit" name="outro" value="Retinoscópio">
+                      <input type="submit" name="outro" value="Frontofocómetro">
+                      <input type="submit" name="outro" value="Lâmpada de Fenda">
+                      <input type="submit" name="outro" value="Projector">
+                  </div>
+              </div>
+            </form>
+        </div>
+
+        <div class="col-10">
+
+            <?php
+
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $bd = "pupilab";
+            $conn = mysqli_connect($servername, $username, $password, $bd);
+            if (!$conn) {
+                die("Erro na ligacao: " . mysqli_connect_error()); //Mensagem de erro caso nao haja ligação à base de dados
+                //Caso haja ligação executa o código abaixo!vv
+            }
+
+            if(isset($_POST['todos'])){
+                header('Location: produtos.php?message=all');
+            }else if (isset($_POST['observacao'])) {
+                header('Location: produtos.php?message=observacao');
+            } else if (isset($_POST['imagem'])) {
+                header('Location: produtos.php?message=imagem');
+            } else if (isset($_POST['oficina'])) {
+                header('Location: produtos.php?message=oficina');
+            } else if (isset($_POST['outro'])) {
+                header('Location: produtos.php?message=outro');
+            } else {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1");
+            }
+
+            if ($_GET['message'] == 'all') {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1");
+            } else if ($_GET['message'] == 'observacao') {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao'");
+            } else if ($_GET['message'] == 'imagem') {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Imagem'");
+            } else if ($_GET['message'] == 'oficina') {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina'");
+            } else if ($_GET['message'] == 'outro') {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+            } else {
+                header('Location: produtos.php?message=all');
+            }
+
+
+            $nrows = ceil(mysqli_num_rows($resultados) / 3);
+            for ($i = 0; $i < $nrows; $i++) {
+                print "<div class='row'>";
+                for ($j = 0; $j < 3; $j++) {
+                    while ($linha = mysqli_fetch_assoc($resultados)) {
+
+                        print "<a class='mx-2' href='vinyl.php?id=" . $linha['id'] . "'><div class='card border-0' style='width: 20rem;'>
+                            <img class='card-img-top' src='" . $linha['image'] . "' alt='Card image cap'>
+                            <div class='card-block'>
+                                <h4 class='card-title'>" . $linha['title'] . "</h4>
+                                <p class='card-text'>" . $linha['subtitle'] . "</p>
+                            </div>
+                        </div></a>
+                      ";
+                    }
+
+                    $nrows = ceil(mysqli_num_rows($resultados) / 3);
+                    for ($i = 0; $i < $nrows; $i++) {
+                        print "<div class='row'>";
+                        for ($j = 0; $j < 3; $j++) {
+                            while ($linha = mysqli_fetch_assoc($resultados)) {
+                                print "<a class='mx-left' href='vinyl.php?id=" . $linha['id'] . "'><div class='card border-0' style='width: 20rem;'>
+                            <img class='card-img-top' src='" . $linha['image'] . "' alt='Card image cap'>
+                            <div class='card-block'>
+                                <h4 class='card-title'>" . $linha['title'] . "</h4>
+                                <p class='card-text'>" . $linha['subtitle'] . "</p>
+                            </div>
+                        </div></a>
+                      ";
+                            }
+
+
+                            print "</div>";
+                        }
+                    }
+                }
+            }
+
+
+
+            ?>
+
+          </div>
+
+        </div>
+
     </div>
-    <div class="container-fluid botao_main animated fadeInUp slower">
-        <center>
-            <a id="ver_produtos" class="black borderblack">VER PRODUTOS</a>
-            <a id="seta" class="borderblack" ><i class="fas fa-caret-right fa-lg black"></i> </a>
-        </center>
-    </div>
+
+    <div class="col-1"> </div>
+
+  </div>
 
 
 </body>
