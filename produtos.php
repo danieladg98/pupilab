@@ -288,7 +288,7 @@
             }
 
 
-            $nrows = ceil(mysqli_num_rows($resultados) / 3);
+            /*$nrows = (mysqli_num_rows($resultados) / 3);
             for ($i = 0; $i < $nrows; $i++) {
                 print "<div class='row'>";
                 for ($j = 0; $j < 3; $j++) {
@@ -324,11 +324,27 @@
                         }
                     }
                 }
-            }
-
-
-
+            } */
             ?>
+
+
+            <!-- COMEÇA AQUI -->
+
+            <div class="row">
+
+
+                <div class="col-6 productmedia">
+                  <img src="media/images/produtos/arkeratometros.jpg" alt="Product Preview">
+                </div>
+
+                <div class="col-6 productinfo">
+                  <h4> Título </h4>
+                  <h5> Sub-Título </h5>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <a href="pdfs/arkeratometros.pdf" class="button" download><i class="fa fa-download"></i>Download PDF</a>
+                </div>
+              
+            </div>
 
           </div>
 
