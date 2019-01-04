@@ -110,8 +110,18 @@ nav {
   border: none;
 }
 
-.active_class{
+.active_subclass {
+  outline: 2px solid white;
+  text-decoration: underline;
+}
 
+.transition_none {
+  transition: none !important;
+}
+
+.dontLooseFocus {
+  outline: 2px solid white;
+  text-decoration: underline;
 }
 
 input[type=submit]:focus{
