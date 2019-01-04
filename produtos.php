@@ -33,8 +33,7 @@
             <h2 class="">PRODUTOS</h2>
             <br>
             <form method="post" action="">
-              <input type="submit" name="todos" value="Ver Todos"><br>
-              <div >
+              <div>
                 <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="Observação">
               </div>
               <div class="collapse collapsesubmenu" id="sub_menu1">
@@ -106,6 +105,7 @@
                       <input type="submit" name="projetor" value="Projector">
                   </div>
               </div>
+              <input type="submit" name="usados" value="Usados">
             </form>
         </div>
 
@@ -113,19 +113,7 @@
 
             <?php
 
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $bd = "pupilab";
-            $conn = mysqli_connect($servername, $username, $password, $bd);
-            if (!$conn) {
-                die("Erro na ligacao: " . mysqli_connect_error()); //Mensagem de erro caso nao haja ligação à base de dados
-                //Caso haja ligação executa o código abaixo!vv
-            }
-
-            if(isset($_POST['todos'])){
-                header('Location: produtos.php?message=all');
-            }else if (isset($_POST['lampadasdefenda'])) {
+            if (isset($_POST['lampadasdefenda'])) {
                 header('Location: produtos.php?message=lampadasdefenda');
             } else if (isset($_POST['oftalmoscopios'])) {
                 header('Location: produtos.php?message=oftalmoscopios');
@@ -192,112 +180,111 @@
             } else if (isset($_POST['projetor'])) {
                 header('Location: produtos.php?message=projetor');
             } else {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
             }
 
-            if ($_GET['message'] == 'all') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1");
-            } else if ($_GET['message'] == 'lampadasdefenda') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
+
+            if ($_GET['message'] == 'lampadasdefenda') {
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Lâmpadas de Fenda'");
                 print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Lâmpadas de Fenda\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
             } else if ($_GET['message'] == 'oftalmoscopios') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Oftalmoscopicos'");
                 print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Oftalmoscópios\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
             } else if ($_GET['message'] == 'retinoscopios') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Retinoscopios'");
                 print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Retinoscópios\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
             } else if ($_GET['message'] == 'retinometros') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Retinometros'");
                 print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Retinómetros\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
             } else if ($_GET['message'] == 'unidadesrefracao') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Unidade de Refracao'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Unidades de Refração\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'autorefractometros') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Auto-Refractometros'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Auto-Refractómetros\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'foropteros') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Foroptero'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Forópteros\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'projetoresoptotipos') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Projetores Optotipos'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Pojectores Optótipos\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'lcd') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'LCD'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'LCD\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'mesaseletricas') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Mesas Electricas'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Mesas Electricas\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'caixadelentes') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Caixas de Lentes'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Caixa de Lentes\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'armacoesdeprova') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Armacoes de Prova'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Armações de Prova\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'frontofocometrosinterna') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Frontofocometros L/Interna'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Frontofocómetros L/ Interna\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'frontofocometrosdigitais') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Frontofocometros Digitais'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Frontofocómetros Digitais\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'arkeratometros') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Arkeratometros'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Arkeratómetros\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'oct') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'OCT'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'OCT\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'paquimetro') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Paquimetro'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Paquimetro\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'biometro') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Biometro'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Biometro\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'topografo') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Topografo'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Topógrafo\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'campimetroperimetro') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Campimetro/Perimetro'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Campímetro/Perímetro\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'ultrasom') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Ultrassom'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Ultrassom\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'microscopioespecular') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Microscopio Especular'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Microscópio Especular\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'biseladoras') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Biseladoras'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Biseladoras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'maquinasacabamentosranhuras') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Maquinas / Acabamentos / Ranhuras'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Máquinas/Acabamentos/Ranhuras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'polidoras') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Polidoras'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Polidoras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'ultrasons') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Ultrassons'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Ultrassons\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'ventilete') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Ventiletes'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Ventilete\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'ferramentas') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Ferramentas'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Ferramentas\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'oftalmoscopio') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Oftalmoscopio'");
                 print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Oftalmoscópio\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
             } else if ($_GET['message'] == 'retinoscopio') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Retinoscopio'");
                 print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Retinoscópio\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
             } else if ($_GET['message'] == 'frontofocometro') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Frontofocometro'");
                 print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Frontofocómetro\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
             } else if ($_GET['message'] == 'lampadadefenda') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Lampadas de Fenda'");
                 print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Lâmpada de Fenda\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
             } else if ($_GET['message'] == 'projetor') {
-                $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
+                $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'OProjectores'");
                 print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Projector\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
             } else {
-                header('Location: produtos.php?message=all');
+                header('Location: produtos.php?message=lampadasdefenda');
             }
 
 

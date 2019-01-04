@@ -20,5 +20,7 @@
                     die("Erro na ligacao: " . mysqli_connect_error()); //Mensagem de erro caso nao haja ligação à base de dados
                     //Caso haja ligação executa o código abaixo!vv
                 }
+                
+                $conn->set_charset('utf8');
 
 ?>
