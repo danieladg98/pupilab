@@ -39,7 +39,7 @@
               </div>
               <div class="collapse collapsesubmenu" id="sub_menu1">
                   <div class="col-1 in">
-                      <input type="submit" name="lampadasdefenda" value="Lampadas de Fenda">
+                      <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
                       <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
                       <input type="submit" name="retinoscopios" value="Retinoscópios">
                       <input type="submit" name="retinometros" value="Retinómetros">
@@ -54,7 +54,7 @@
                       <input type="submit" name="unidadesrefracao" value="Unidades de Refração">
                       <input type="submit" name="autorefractometros" value="Auto-Refractómetros">
                       <input type="submit" name="foropteros" value="Forópteros">
-                      <input type="submit" name="projetoresoptotipos" value="Pojectores Optotipos">
+                      <input type="submit" name="projetoresoptotipos" value="Pojectores Optótipos">
                       <input type="submit" name="lcd" value="LCD">
                       <input type="submit" name="mesaseletricas" value="Mesas Electricas">
                       <input type="submit" name="caixadelentes" value="Caixa de Lentes">
@@ -75,7 +75,7 @@
                       <input type="submit" name="biometro" value="Biometro">
                       <input type="submit" name="topografo" value="Topógrafo">
                       <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
-                      <input type="submit" name="ultrasom" value="Ultrasom">
+                      <input type="submit" name="ultrasom" value="Ultrassom">
                       <input type="submit" name="microscopioespecular" value="Microscópio Especular">
                   </div>
               </div>
@@ -88,7 +88,7 @@
                       <input type="submit" name="biseladoras" value="Biseladoras">
                       <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
                       <input type="submit" name="polidoras" value="Polidoras">
-                      <input type="submit" name="ultrasons" value="Ultrasons">
+                      <input type="submit" name="ultrasons" value="Ultrassons">
                       <input type="submit" name="ventilete" value="Ventilete">
                       <input type="submit" name="ferramentas" value="Ferramentas">
                   </div>
@@ -199,7 +199,7 @@
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1");
             } else if ($_GET['message'] == 'lampadasdefenda') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
-                print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Lampadas de Fenda\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
+                print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Lâmpadas de Fenda\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
             } else if ($_GET['message'] == 'oftalmoscopios') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
                 print"<script> $('#sub_menu1').addClass('transition_none'); $('#sub_menu1').collapse(); $('#sub_menu1').removeClass('transition_none'); $('input[value=\'Oftalmoscópios\']').focus().addClass('dontLooseFocus'); category1selected=true; </script>";
@@ -220,7 +220,7 @@
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Forópteros\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'projetoresoptotipos') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
-                print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Pojectores Optotipos\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
+                print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Pojectores Optótipos\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
             } else if ($_GET['message'] == 'lcd') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
                 print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'LCD\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
@@ -259,7 +259,7 @@
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Campímetro/Perímetro\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'ultrasom') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
-                print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Ultrasom\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
+                print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Ultrassom\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
             } else if ($_GET['message'] == 'microscopioespecular') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
                 print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Microscópio Especular\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
@@ -274,7 +274,7 @@
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Polidoras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'ultrasons') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
-                print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Ultrasons\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
+                print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Ultrassons\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
             } else if ($_GET['message'] == 'ventilete') {
                 $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Oficina' AND subcategory = 'Outro'");
                 print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Ventilete\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
