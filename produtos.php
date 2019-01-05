@@ -360,6 +360,9 @@
                 <div class="col-1"> </div>
 
             </div>
+        <?php
+    include_once 'parts/footer.php';
+  ?>
 
 
 </body>
