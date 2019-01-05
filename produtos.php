@@ -119,26 +119,56 @@
 
             while ($linha = mysqli_fetch_assoc($resultados)) {
 
-              echo "
+              if($linha['full_article'] == 1){
 
-              <div class='row'>
+                echo "
+
+                <div class='row'>
 
 
-                  <div class='col-6 productmedia'>
-                    <img src='". $linha['image'] ."' alt='Product Preview'>
-                  </div>
+                    <div class='col-6 productmedia'>
+                      <img src='". $linha['image'] ."' alt='Product Preview'>
+                    </div>
 
-                  <div class='col-6 productinfo'>
-                    <h4> ". $linha['title'] ." </h4>
-                    <h5> ". $linha['subtitle'] ." </h5>
-                    <p> ". $linha['description'] ." </p>
-                    <a href='". $linha['pdf'] ."' class='button' download><i class='fa fa-download'></i>Download PDF</a>
-                  </div>
+                    <div class='col-6 productinfo'>
+                      <h4> ". $linha['title'] ." </h4>
+                      <h5> ". $linha['subtitle'] ." </h5>
+                      <p> ". $linha['description'] ." </p>
+                      <a href='". $linha['pdf'] ."' class='button' download><i class='fa fa-download'></i>Download PDF</a>
+                    </div>
 
-              </div>
+                </div>
 
-              ";
-                    }
+                ";
+
+              } else if($linha['full_article'] == 0){
+
+                echo "
+
+                <div class='row'>
+
+                    <div class='col-6 productinfo'>
+                      <h4> ". $linha['title'] ." </h4>
+                    </div>
+
+                    <div class='col-6 productcontact'>
+                      <form action='' method='post'>
+                        <label for='nome'>Email</label>
+                        <input type='text' name='email' value=''/>
+                        <label for='nome'>Password</label>
+                        <input type='password' name='password' value=''/>
+                        <input type='submit' name='login_submit' value='Log In'/>
+                      </form>
+                    </div>
+
+                </div>
+
+                ";
+
+              }
+
+            }
+
             ?>
 
 
