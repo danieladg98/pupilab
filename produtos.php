@@ -21,7 +21,7 @@
   ?>
 
 
-            <div class="row" id="products_margin" style="width:100%;">
+            <div class="row" id="website_content">
 
                 <div class="col-1"> </div>
 
@@ -113,7 +113,7 @@
                         <div class="col-10">
 
                             <?php
-                          
+
             include_once 'parts/productsfetch.php';
 
             $nrows = mysqli_num_rows($resultados);

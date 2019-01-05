@@ -39,13 +39,13 @@ body{
 }
 
 #logo {
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
 }
 
 nav {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
     z-index: 1000000;
 }
 
@@ -54,8 +54,10 @@ nav {
 }
 .navbar{
     padding-top:3vh;
-    margin-right: 10vw;
-    margin-left: 10vw;
+}
+
+.navbar-brand{
+  width: 85%;
 }
 
 #navmain a {
@@ -89,6 +91,25 @@ nav {
   .navbar-brand{
     width:75%;
   }
+  #logo {
+      max-width: 40%;
+      height: auto;
+  }
+  nav {
+      padding-left: 12% !important;
+      padding-right: 12% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #logo {
+      max-width: 60%;
+      height: auto;
+  }
+  nav {
+      padding-left: 13% !important;
+      padding-right: 13% !important;
+  }
 }
 
 .bodycontainer {
@@ -97,8 +118,8 @@ nav {
 }
 
 .bodycontent {
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .main_text {
@@ -195,8 +216,10 @@ input[type=button]:hover{
   padding: 4vh 0 2vh 0;
 }
 
-#products_margin{
-  padding:20vh 1vw 10vh 2vw;
+#website_content{
+  padding:15vh 0 10vh 0;
+  width:100%;
+  margin: 0;
 }
 
 .pupilab_padding{
