@@ -12,192 +12,161 @@
 
 <body id="bd_else">
 
-  <?php
+    <?php
     include_once 'parts/navbar.php';
   ?>
 
-  <?php
+        <?php
     session_start();
   ?>
 
 
-  <div class="row bodycontainer">
+            <div class="row" id="products_margin" style="width:100%;">
 
-    <div class="col-1"> </div>
+                <div class="col-1"> </div>
 
-    <div class="col-10 bodycontent">
+                <div class="col-10 bodycontent">
 
-      <div class="row">
+                    <div class="row">
 
-        <div class="lateral col-2 submenu">
-            <h2 class="">PRODUTOS</h2>
-            <br>
-            <form method="post" action="">
-              <div>
-                <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="Observação">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu1">
-                  <div class="col-1 in">
-                      <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
-                      <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
-                      <input type="submit" name="retinoscopios" value="Retinoscópios">
-                      <input type="submit" name="retinometros" value="Retinómetros">
-                  </div>
-              </div>
+                        <div class="lateral col-2 submenu ">
+                            <h2 class="oswald_title">PRODUTOS</h2>
 
-              <div>
-                <input id="category2" type="button" data-toggle="collapse" data-target="#sub_menu2" aria-expanded="false" aria-controls="sub_menu2" value="Refração">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu2">
-                  <div class="col-1 in">
-                      <input type="submit" name="unidadesrefracao" value="Unidades de Refração">
-                      <input type="submit" name="autorefractometros" value="Auto-Refractómetros">
-                      <input type="submit" name="foropteros" value="Forópteros">
-                      <input type="submit" name="projetoresoptotipos" value="Pojectores Optótipos">
-                      <input type="submit" name="lcd" value="LCD">
-                      <input type="submit" name="mesaseletricas" value="Mesas Electricas">
-                      <input type="submit" name="caixadelentes" value="Caixa de Lentes">
-                      <input type="submit" name="armacoesdeprova" value="Armações de Prova">
-                      <input type="submit" name="frontofocometrosinterna" value="Frontofocómetros L/ Interna">
-                      <input type="submit" name="frontofocometrosdigitais" value="Frontofocómetros Digitais">
-                      <input type="submit" name="arkeratometros" value="Arkeratómetros">
-                  </div>
-              </div>
+                            <br>
+                            <form method="post" action="">
+                                <div>
+                                    <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="Observação">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu1">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
+                                        <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
+                                        <input type="submit" name="retinoscopios" value="Retinoscópios">
+                                        <input type="submit" name="retinometros" value="Retinómetros">
+                                    </div>
+                                </div>
 
-              <div>
-                <input id="category3" type="button" data-toggle="collapse" data-target="#sub_menu3" aria-expanded="false" aria-controls="sub_menu3" value="Diagnóstico/Medição">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu3">
-                  <div class="col-1 in">
-                      <input type="submit" name="oct" value="OCT">
-                      <input type="submit" name="paquimetro" value="Paquimetro">
-                      <input type="submit" name="biometro" value="Biometro">
-                      <input type="submit" name="topografo" value="Topógrafo">
-                      <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
-                      <input type="submit" name="ultrasom" value="Ultrassom">
-                      <input type="submit" name="microscopioespecular" value="Microscópio Especular">
-                  </div>
-              </div>
+                                <div>
+                                    <input id="category2" type="button" data-toggle="collapse" data-target="#sub_menu2" aria-expanded="false" aria-controls="sub_menu2" value="Refração">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu2">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="unidadesrefracao" value="Unidades de Refração">
+                                        <input type="submit" name="autorefractometros" value="Auto-Refractómetros">
+                                        <input type="submit" name="foropteros" value="Forópteros">
+                                        <input type="submit" name="projetoresoptotipos" value="Pojectores Optótipos">
+                                        <input type="submit" name="lcd" value="LCD">
+                                        <input type="submit" name="mesaseletricas" value="Mesas Electricas">
+                                        <input type="submit" name="caixadelentes" value="Caixa de Lentes">
+                                        <input type="submit" name="armacoesdeprova" value="Armações de Prova">
+                                        <input type="submit" name="frontofocometrosinterna" value="Frontofocómetros L/ Interna">
+                                        <input type="submit" name="frontofocometrosdigitais" value="Frontofocómetros Digitais">
+                                        <input type="submit" name="arkeratometros" value="Arkeratómetros">
+                                    </div>
+                                </div>
 
-              <div>
-                <input id="category4" type="button" data-toggle="collapse" data-target="#sub_menu4" aria-expanded="false" aria-controls="sub_menu4" value="Oficina/Ópticas">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu4">
-                  <div class="col-1 in">
-                      <input type="submit" name="biseladoras" value="Biseladoras">
-                      <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
-                      <input type="submit" name="polidoras" value="Polidoras">
-                      <input type="submit" name="ultrasons" value="Ultrassons">
-                      <input type="submit" name="ventilete" value="Ventilete">
-                      <input type="submit" name="ferramentas" value="Ferramentas">
-                  </div>
-              </div>
+                                <div>
+                                    <input id="category3" type="button" data-toggle="collapse" data-target="#sub_menu3" aria-expanded="false" aria-controls="sub_menu3" value="Diagnóstico/Medição">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu3">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="oct" value="OCT">
+                                        <input type="submit" name="paquimetro" value="Paquimetro">
+                                        <input type="submit" name="biometro" value="Biometro">
+                                        <input type="submit" name="topografo" value="Topógrafo">
+                                        <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
+                                        <input type="submit" name="ultrasom" value="Ultrassom">
+                                        <input type="submit" name="microscopioespecular" value="Microscópio Especular">
+                                    </div>
+                                </div>
 
-              <div>
-                <input id="category5" type="button" data-toggle="collapse" data-target="#sub_menu5" aria-expanded="false" aria-controls="sub_menu5" value="Lâmpadas">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu5">
-                  <div class="col-1 in">
-                      <input type="submit" name="oftalmoscopio" value="Oftalmoscópio">
-                      <input type="submit" name="retinoscopio" value="Retinoscópio">
-                      <input type="submit" name="frontofocometro" value="Frontofocómetro">
-                      <input type="submit" name="lampadadefenda" value="Lâmpada de Fenda">
-                      <input type="submit" name="projetor" value="Projector">
-                  </div>
-              </div>
-              <input type="submit" name="usados" value="Usados">
-            </form>
-        </div>
+                                <div>
+                                    <input id="category4" type="button" data-toggle="collapse" data-target="#sub_menu4" aria-expanded="false" aria-controls="sub_menu4" value="Oficina/Ópticas">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu4">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="biseladoras" value="Biseladoras">
+                                        <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
+                                        <input type="submit" name="polidoras" value="Polidoras">
+                                        <input type="submit" name="ultrasons" value="Ultrassons">
+                                        <input type="submit" name="ventilete" value="Ventilete">
+                                        <input type="submit" name="ferramentas" value="Ferramentas">
+                                    </div>
+                                </div>
 
-        <div class="col-10">
+                                <div>
+                                    <input id="category5" type="button" data-toggle="collapse" data-target="#sub_menu5" aria-expanded="false" aria-controls="sub_menu5" value="Lâmpadas">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu5">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="oftalmoscopio" value="Oftalmoscópio">
+                                        <input type="submit" name="retinoscopio" value="Retinoscópio">
+                                        <input type="submit" name="frontofocometro" value="Frontofocómetro">
+                                        <input type="submit" name="lampadadefenda" value="Lâmpada de Fenda">
+                                        <input type="submit" name="projetor" value="Projector">
+                                    </div>
+                                </div>
+                                <input type="submit" name="usados" value="Usados">
+                            </form>
+                        </div>
 
-            <?php
+                        <div class="col-10">
 
+                            <?php
+                          
             include_once 'parts/productsfetch.php';
 
             $nrows = mysqli_num_rows($resultados);
 
             while ($linha = mysqli_fetch_assoc($resultados)) {
 
-              if($linha['full_article'] == 1){
+              echo "
 
-                echo "
+              <div class='row row_products'>
+                    <div class='col-1'></div>
 
-                <div class='row'>
+                  <div class='col-5 productmedia'>
+                    <img src='". $linha['image'] ."' alt='Product Preview'>
+                  </div>
 
+                  <div class='col-6 productinfo'>
+                    <h4 class='oswald_title'> ". $linha['title'] ." </h4>
+                    <h5> ". $linha['subtitle'] ." </h5>
+                    <p class='products_text'> ". $linha['description'] ." </p>
+                    <a href='". $linha['pdf'] ."' class='button' target='_blank'><i class='far fa-file-pdf'></i> Ver PDF</a>
+                  </div>
 
-                    <div class='col-6 productmedia'>
-                      <img src='". $linha['image'] ."' alt='Product Preview'>
-                    </div>
+              </div>
 
-                    <div class='col-6 productinfo'>
-                      <h4> ". $linha['title'] ." </h4>
-                      <h5> ". $linha['subtitle'] ." </h5>
-                      <p> ". $linha['description'] ." </p>
-                      <a href='". $linha['pdf'] ."' class='button' target='_blank'><i class='far fa-file-pdf'></i> Ver PDF</a>
-                    </div>
-
-                </div>
-
-                ";
-
-              } else if($linha['full_article'] == 0){
-
-                echo "
-
-                <div class='row'>
-
-                    <div class='col-6 productinfo'>
-                      <h4> ". $linha['title'] ." </h4>
-                    </div>
-
-                    <div class='col-6 productcontact'>
-                      <form action='' method='post'>
-                        <label for='nome'>Email</label>
-                        <input type='text' name='email' value=''/>
-                        <label for='nome'>Password</label>
-                        <input type='password' name='password' value=''/>
-                        <input type='submit' name='login_submit' value='Log In'/>
-                      </form>
-                    </div>
-
-                </div>
-
-                ";
-
-              }
-
-            }
-
+              ";
+                    }
             ?>
 
 
-            <!-- COMEÇA AQUI -->
+                                <!-- COMEÇA AQUI -->
 
 
 
-          </div>
+                        </div>
 
-        </div>
+                    </div>
 
-    </div>
+                </div>
 
-    <div class="col-1"> </div>
+                <div class="col-1"> </div>
 
-  </div>
 
-  <?php
+            </div>
 
-  include_once 'parts/footer.php';
-
+            <?php
+    include_once 'parts/footer.php';
   ?>
+
 
 
 </body>
 
 </html>
-
-
 <?php
 
 /*
