@@ -59,7 +59,7 @@
                 <p>
                     <i class="fas fa-envelope mr-3"></i> geral@pupilab.com</p>
                 <p>
-                    <i class="fas fa-phone mr-3"></i> 251 798 632</p>
+                    <i class="fas fa-phone mr-3"></i> +351 251 798 632</p>
 
             </div>
             <!-- Grid column -->
