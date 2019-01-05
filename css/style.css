@@ -39,7 +39,7 @@ body{
 }
 
 #logo {
-    width: 30%;
+    max-width: 40%;
     height: auto;
 }
 
@@ -48,8 +48,6 @@ nav {
     padding-right: 0 !important;
     z-index: 1000000;
 }
-
-
 
 #nav_branca{
     background-color: white;
@@ -85,6 +83,12 @@ nav {
 #navelse a:hover {
   color: black;
   text-decoration: underline;
+}
+
+@media (max-width: 630px) {
+  .navbar-brand{
+    width:75%;
+  }
 }
 
 .bodycontainer {
@@ -211,4 +215,3 @@ footer a:hover{
     color:rgba(0,0,0,.8);
     text-decoration: none;
 }
-
