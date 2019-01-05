@@ -11,7 +11,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/style2.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 
 <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans:400,600" rel="stylesheet">

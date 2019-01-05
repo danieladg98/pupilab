@@ -1,7 +1,7 @@
 <nav id="navmain" class="navbar fixed-top navbar navbar-expand">
   <div class="col-1"></div>
     <a  class="col-6" href="index.php"><img id="logo" src="media/logo/logo_white.png" alt="eyes"></a>
-    <a id="" class="col-1 white" href="index.php">EMPRESA</a>
+    <a id="" class="col-1 white" href="index.php">A EMPRESA</a>
     <a id="" class="col-1 white" href="index.php">SERVIÇOS</a>
     <a id="" class="col-1 white" href="produtos.php">PRODUTOS</a>
     <a id="" class="col-1 white" href="index.php">CONTACTOS</a>
