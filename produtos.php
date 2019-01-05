@@ -21,7 +21,7 @@
   ?>
 
 
-  <div class="row" style="width:100%;">
+  <div class="row bodycontainer">
 
     <div class="col-1"> </div>
 
@@ -134,7 +134,7 @@
                       <h4> ". $linha['title'] ." </h4>
                       <h5> ". $linha['subtitle'] ." </h5>
                       <p> ". $linha['description'] ." </p>
-                      <a href='". $linha['pdf'] ."' class='button' download><i class='fa fa-download'></i>Download PDF</a>
+                      <a href='". $linha['pdf'] ."' class='button' target='_blank'><i class='far fa-file-pdf'></i> Ver PDF</a>
                     </div>
 
                 </div>
