@@ -46,6 +46,7 @@ body{
 nav {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    z-index: 1000000;
 }
 
 
@@ -86,6 +87,11 @@ nav {
   text-decoration: underline;
 }
 
+.bodycontainer {
+  width: 100%;
+  margin: 0;
+}
+
 .bodycontent {
   padding-right: 2em;
   padding-left: 2em;
@@ -119,6 +125,7 @@ nav {
   font-family: 'Oswald', sans-serif;
   font-size: 0.8rem;
   padding: 0.55% 1.2%;
+  z-index: 1000;
 }
 
 .submenu input {

@@ -29,7 +29,14 @@
 
       <div class="row">
 
+        <h1>Serviços</h1>
 
+        <p>Assistência técnica e reparação</p>
+        <p>Reparação Multimarca</p>
+        <p>Assistência Técnica preventiva e/ou correctiva</p>
+        <p>Contrato de manutenção</p>
+        <p>Instalação</p>
+        <p>Montagem</p>
 
         </div>
 
