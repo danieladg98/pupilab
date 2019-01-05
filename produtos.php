@@ -12,106 +12,110 @@
 
 <body id="bd_else">
 
-  <?php
+    <?php
     include_once 'parts/navbar.php';
   ?>
 
-  <?php
+        <?php
     session_start();
   ?>
 
 
-  <div class="row" style="width:100%;">
+            <div class="row" id="products_margin" style="width:100%;">
 
-    <div class="col-1"> </div>
+                <div class="col-1"> </div>
 
-    <div class="col-10 bodycontent">
+                <div class="col-10 bodycontent">
 
-      <div class="row">
+                    <div class="row">
+                        <h2 class="oswald_title">PRODUTOS</h2>
+                    </div>
 
-        <div class="lateral col-2 submenu">
-            <h2 class="">PRODUTOS</h2>
-            <br>
-            <form method="post" action="">
-              <div>
-                <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="Observação">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu1">
-                  <div class="col-1 in">
-                      <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
-                      <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
-                      <input type="submit" name="retinoscopios" value="Retinoscópios">
-                      <input type="submit" name="retinometros" value="Retinómetros">
-                  </div>
-              </div>
+                    <div class="row row_products">
+                        
+                        <div class="row">
 
-              <div>
-                <input id="category2" type="button" data-toggle="collapse" data-target="#sub_menu2" aria-expanded="false" aria-controls="sub_menu2" value="Refração">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu2">
-                  <div class="col-1 in">
-                      <input type="submit" name="unidadesrefracao" value="Unidades de Refração">
-                      <input type="submit" name="autorefractometros" value="Auto-Refractómetros">
-                      <input type="submit" name="foropteros" value="Forópteros">
-                      <input type="submit" name="projetoresoptotipos" value="Pojectores Optótipos">
-                      <input type="submit" name="lcd" value="LCD">
-                      <input type="submit" name="mesaseletricas" value="Mesas Electricas">
-                      <input type="submit" name="caixadelentes" value="Caixa de Lentes">
-                      <input type="submit" name="armacoesdeprova" value="Armações de Prova">
-                      <input type="submit" name="frontofocometrosinterna" value="Frontofocómetros L/ Interna">
-                      <input type="submit" name="frontofocometrosdigitais" value="Frontofocómetros Digitais">
-                      <input type="submit" name="arkeratometros" value="Arkeratómetros">
-                  </div>
-              </div>
+                        <div class="lateral col-2 submenu">
+                            <form method="post" action="">
+                                <div>
+                                    <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="OBSERVAÇÃO">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu1">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
+                                        <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
+                                        <input type="submit" name="retinoscopios" value="Retinoscópios">
+                                        <input type="submit" name="retinometros" value="Retinómetros">
+                                    </div>
+                                </div>
 
-              <div>
-                <input id="category3" type="button" data-toggle="collapse" data-target="#sub_menu3" aria-expanded="false" aria-controls="sub_menu3" value="Diagnóstico/Medição">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu3">
-                  <div class="col-1 in">
-                      <input type="submit" name="oct" value="OCT">
-                      <input type="submit" name="paquimetro" value="Paquimetro">
-                      <input type="submit" name="biometro" value="Biometro">
-                      <input type="submit" name="topografo" value="Topógrafo">
-                      <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
-                      <input type="submit" name="ultrasom" value="Ultrassom">
-                      <input type="submit" name="microscopioespecular" value="Microscópio Especular">
-                  </div>
-              </div>
+                                <div>
+                                    <input id="category2" type="button" data-toggle="collapse" data-target="#sub_menu2" aria-expanded="false" aria-controls="sub_menu2" value="REFRAÇÃO">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu2">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="unidadesrefracao" value="Unidades de Refração">
+                                        <input type="submit" name="autorefractometros" value="Auto-Refractómetros">
+                                        <input type="submit" name="foropteros" value="Forópteros">
+                                        <input type="submit" name="projetoresoptotipos" value="Pojectores Optótipos">
+                                        <input type="submit" name="lcd" value="LCD">
+                                        <input type="submit" name="mesaseletricas" value="Mesas Electricas">
+                                        <input type="submit" name="caixadelentes" value="Caixa de Lentes">
+                                        <input type="submit" name="armacoesdeprova" value="Armações de Prova">
+                                        <input type="submit" name="frontofocometrosinterna" value="Frontofocómetros L/ Interna">
+                                        <input type="submit" name="frontofocometrosdigitais" value="Frontofocómetros Digitais">
+                                        <input type="submit" name="arkeratometros" value="Arkeratómetros">
+                                    </div>
+                                </div>
 
-              <div>
-                <input id="category4" type="button" data-toggle="collapse" data-target="#sub_menu4" aria-expanded="false" aria-controls="sub_menu4" value="Oficina/Ópticas">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu4">
-                  <div class="col-1 in">
-                      <input type="submit" name="biseladoras" value="Biseladoras">
-                      <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
-                      <input type="submit" name="polidoras" value="Polidoras">
-                      <input type="submit" name="ultrasons" value="Ultrassons">
-                      <input type="submit" name="ventilete" value="Ventilete">
-                      <input type="submit" name="ferramentas" value="Ferramentas">
-                  </div>
-              </div>
+                                <div>
+                                    <input id="category3" type="button" data-toggle="collapse" data-target="#sub_menu3" aria-expanded="false" aria-controls="sub_menu3" value="DIAGNÓSTICO/MEDIÇÃO">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu3">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="oct" value="OCT">
+                                        <input type="submit" name="paquimetro" value="Paquimetro">
+                                        <input type="submit" name="biometro" value="Biometro">
+                                        <input type="submit" name="topografo" value="Topógrafo">
+                                        <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
+                                        <input type="submit" name="ultrasom" value="Ultrassom">
+                                        <input type="submit" name="microscopioespecular" value="Microscópio Especular">
+                                    </div>
+                                </div>
 
-              <div>
-                <input id="category5" type="button" data-toggle="collapse" data-target="#sub_menu5" aria-expanded="false" aria-controls="sub_menu5" value="Lâmpadas">
-              </div>
-              <div class="collapse collapsesubmenu" id="sub_menu5">
-                  <div class="col-1 in">
-                      <input type="submit" name="oftalmoscopio" value="Oftalmoscópio">
-                      <input type="submit" name="retinoscopio" value="Retinoscópio">
-                      <input type="submit" name="frontofocometro" value="Frontofocómetro">
-                      <input type="submit" name="lampadadefenda" value="Lâmpada de Fenda">
-                      <input type="submit" name="projetor" value="Projector">
-                  </div>
-              </div>
-              <input type="submit" name="usados" value="Usados">
-            </form>
-        </div>
+                                <div>
+                                    <input id="category4" type="button" data-toggle="collapse" data-target="#sub_menu4" aria-expanded="false" aria-controls="sub_menu4" value="OFICINA/ÓPTICAS">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu4">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="biseladoras" value="Biseladoras">
+                                        <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
+                                        <input type="submit" name="polidoras" value="Polidoras">
+                                        <input type="submit" name="ultrasons" value="Ultrassons">
+                                        <input type="submit" name="ventilete" value="Ventilete">
+                                        <input type="submit" name="ferramentas" value="Ferramentas">
+                                    </div>
+                                </div>
 
-        <div class="col-10">
+                                <div>
+                                    <input id="category5" type="button" data-toggle="collapse" data-target="#sub_menu5" aria-expanded="false" aria-controls="sub_menu5" value="LÂMPADAS">
+                                </div>
+                                <div class="collapse collapsesubmenu" id="sub_menu5">
+                                    <div class="col-1 in">
+                                        <input type="submit" name="oftalmoscopio" value="Oftalmoscópio">
+                                        <input type="submit" name="retinoscopio" value="Retinoscópio">
+                                        <input type="submit" name="frontofocometro" value="Frontofocómetro">
+                                        <input type="submit" name="lampadadefenda" value="Lâmpada de Fenda">
+                                        <input type="submit" name="projetor" value="Projector">
+                                    </div>
+                                </div>
+                                <input type="submit" name="usados" value="USADOS">
+                            </form>
+                        </div>
 
-            <?php
+                        <div class="col-10">
+
+                            <?php
 
             if (isset($_POST['lampadasdefenda'])) {
                 header('Location: produtos.php?message=lampadasdefenda');
@@ -328,33 +332,34 @@
             ?>
 
 
-            <!-- COMEÇA AQUI -->
+                                <!-- COMEÇA AQUI -->
 
-            <div class="row">
+                                <div class="row">
+                                    <div class="col-1"></div>
 
+                                    <div class="col-5 productmedia">
+                                        <img src="media/images/produtos/arkeratometros.jpg" alt="Product Preview">
+                                    </div>
 
-                <div class="col-6 productmedia">
-                  <img src="media/images/produtos/arkeratometros.jpg" alt="Product Preview">
+                                    <div class="col-6 productinfo">
+                                        <h3 class="oswald_title"> TÍTULO </h3>
+                                            <h5> Sub-Título </h5>
+                                            <p class="products_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                            <a href="pdfs/arkeratometros.pdf" class="button" download><i class="fa fa-download"></i> Download PDF</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="col-6 productinfo">
-                  <h4> Título </h4>
-                  <h5> Sub-Título </h5>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                  <a href="pdfs/arkeratometros.pdf" class="button" download><i class="fa fa-download"></i>Download PDF</a>
-                </div>
-              
+                <div class="col-1"> </div>
+
             </div>
-
-          </div>
-
-        </div>
-
-    </div>
-
-    <div class="col-1"> </div>
-
-  </div>
 
 
 </body>
