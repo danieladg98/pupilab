@@ -1,10 +1,10 @@
 <nav id="navelse" class="navbar fixed-top navbar navbar-expand">
   <div class="col-1"></div>
     <a  class="col-6" href="index.php"><img id="logo" src="media/logo/logo_black.png" alt="eyes"></a>
-    <a id="" class="col-1 black" href="index.php">EMPRESA</a>
-    <a id="" class="col-1 black" href="index.php">SERVIÇOS</a>
+    <a id="" class="col-1 black" href="empresa.php">A EMPRESA</a>
+    <a id="" class="col-1 black" href="servicos.php">SERVIÇOS</a>
     <a id="" class="col-1 black" href="produtos.php">PRODUTOS</a>
-    <a id="" class="col-1 black" href="index.php">CONTACTOS</a>
+    <a id="" class="col-1 black" href="contactos.php">CONTACTOS</a>
   <div class="col-1"></div>
 </nav>
 
