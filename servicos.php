@@ -52,7 +52,7 @@
                             <figure class=services-icon>
                                 <i style="color: #DF4743" class="fa fa-hands-helping" aria-hidden="true"></i>
                             </figure>
-                            <div class="title-services"> Assistência Técnica preventiva e/ou correctiva </div>
+                            <div class="title-services text-center"> Assistência Técnica preventiva e/ou correctiva </div>
                         </div>
 
 
@@ -72,7 +72,7 @@
 
                         <div class="flex-item-services d-flex justify-content-center">
                             <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-paint-brush" aria-hidden="true"></i>
+                                <i style="color: #DF4743" class="fa fa-cogs" aria-hidden="true"></i>
                             </figure>
                             <div class="title-services">Montagem</div>
                         </div>

@@ -87,7 +87,7 @@
 .flex-item-services {
   /*background: #f1f1f1;*/
   padding-top: 5vh;
-  width: 24vw;
+  width: 27%;
   height: 15vh;
   margin: 10px 4px;
   color: white;
@@ -131,5 +131,13 @@
 
 #services_margin{
     padding:27vh 0 10vh 0;
+}
+
+.navbar-brand img{
+    width:45%;
+}
+
+.fab:hover{
+    color:#DF4743;
 }
 

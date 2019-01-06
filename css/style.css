@@ -12,7 +12,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*overflow-x: hidden; APAGAR NO FIM */
+   overflow-x: hidden;
 }
 
 #bd_else {
@@ -97,7 +97,7 @@ nav {
 }
 
 .main_text {
-    margin-top: 23%;
+    margin-top: 20%;
 }
 
 .main_text p {
@@ -195,8 +195,11 @@ input[type=button]:hover {
 }
 
 .pupilab_padding {
-    color: #2DA037;
     padding-top:2.5vh;
+}
+
+.pupilab_text_footer{
+     color: #2DA037;
 }
 
 footer a,
