@@ -133,7 +133,7 @@
                     <h4 class='oswald_title'> ". $linha['title'] ." </h4>
                     <h5> ". $linha['subtitle'] ." </h5>
                     <p class='products_text'> ". $linha['description'] ." </p>
-                    <a href='". $linha['pdf'] ."' class='button' target='_blank'><i class='far fa-file-pdf'></i> Ver PDF</a>
+                    <a class='detalhes' href='". $linha['pdf'] ."' class='button' target='_blank'>VER DETALHES</a>
                   </div>
 
               </div>

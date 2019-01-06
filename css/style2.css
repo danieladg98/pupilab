@@ -141,3 +141,17 @@
     color:#DF4743;
 }
 
+.detalhes{
+    border: 1px solid #DF4743;
+    color:#DF4743;
+      font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 2% 3%;
+}
+
+.detalhes:hover{
+ color: white;
+background-color: #DF4743;
+    text-decoration: none;
+}
