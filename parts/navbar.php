@@ -13,13 +13,13 @@
                     <a class="nav-link" href="{{ url('/login') }}">Empresa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/register') }}">Serviços</a>
+                    <a class="nav-link" href="servicos.php">Serviços</a>
                 </li>
                  <li class="nav-item">
                     <a class="nav-link" href="produtos.php">Produtos</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/register') }}">Contactos</a>
+                    <a class="nav-link" href="contactos.php">Contactos</a>
                 </li>
             </ul>
         </div>

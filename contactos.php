@@ -57,7 +57,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
-                                                        <input type="number" class="form-control mt-2" placeholder="Telefone" required>
+                                                        <input type="text" class="form-control mt-2" placeholder="Telefone" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
@@ -67,7 +67,7 @@
                                                 </div>
                                         
                                                 <div class="col-12">
-                                                    <button class="btn btn-light" type="submit">Enviar</button>
+                                                    <button class="detalhes" type="submit">ENVIAR</button>
                                                 </div>
                                             </div>
                                         </form>

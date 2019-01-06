@@ -39,10 +39,10 @@
                                 </div>
                                 <div class="collapse collapsesubmenu" id="sub_menu1">
                                     <div class="col-1 in">
-                                        <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
                                         <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
                                         <input type="submit" name="retinoscopios" value="Retinoscópios">
                                         <input type="submit" name="retinometros" value="Retinómetros">
+                                          <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
                                     </div>
                                 </div>
 
