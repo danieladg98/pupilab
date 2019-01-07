@@ -48,7 +48,7 @@
                     </h3>
                 </div>
                 <div class="col-lg-8 mx-auto btn-main">
-                    <a class="detalhes" href="produtos.php">VER PRODUTOS</a>
+                    <a class="detalhes_main" href="produtos.php">VER PRODUTOS</a>
                 </div>
             </div>
         </div>

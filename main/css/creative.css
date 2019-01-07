@@ -30,8 +30,23 @@ a:hover {
   color: #DF4743;
 }
 
+.detalhes_main{
+       border: 1px solid #DF4743;
+    color:#DF4743;
+      font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+      padding: 2% 3%;
+}
+
 .btn-main{
-    padding-top: 3%;
+     padding-top: 3%;
+}
+
+.detalhes_main:hover{
+ color: white;
+background-color: #DF4743;
+    text-decoration: none;
 }
 
 .title_main{
