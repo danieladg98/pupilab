@@ -110,37 +110,46 @@
                             </form>
                         </div>
 
-                        <div class="col-10">
+                        <div class="col-10 pl-4">
 
-                            <?php
-                          
+          <?php
+
             include_once 'parts/productsfetch.php';
 
             $nrows = mysqli_num_rows($resultados);
 
+            $iteration_counter = 0;
+
             while ($linha = mysqli_fetch_assoc($resultados)) {
+
+              $iteration_counter++;
 
               echo "
 
               <div class='row row_products'>
-                    <div class='col-1'></div>
 
-                  <div class='col-5 productmedia'>
+                  <div class='col-xl-5 col-lg-5 productmedia text-center'>
                     <img src='". $linha['image'] ."' alt='Product Preview'>
                   </div>
 
-                  <div class='col-6 productinfo'>
-                    <h4 class='oswald_title'> ". $linha['title'] ." </h4>
+                  <div class='col-xl-6 col-lg-6 productinfo'>
+                    <h4 class='oswald_title' id='producttitle'> ". $linha['title'] ." </h4>
                     <h5> ". $linha['subtitle'] ." </h5>
                     <p class='products_text'> ". $linha['description'] ." </p>
                     <a class='detalhes' href='". $linha['pdf'] ."' class='button' target='_blank'>VER DETALHES</a>
                   </div>
 
               </div>
-
               ";
-                    }
-            ?>
+
+              if($iteration_counter != $nrows){
+                echo"
+                <br>
+                <hr>";
+              }
+
+            }
+    ?>
 
 
                                 <!-- COMEÇA AQUI -->

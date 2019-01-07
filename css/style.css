@@ -202,6 +202,14 @@ input[type=button]:hover {
      color: #2DA037;
 }
 
+@media (max-width: 992px) {
+
+#producttitle{
+  margin-top: 2rem !important;
+}
+
+}
+
 footer a,
 footer p {
     font-size: 0.8rem;
