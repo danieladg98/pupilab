@@ -145,7 +145,7 @@
               if($iteration_counter != $nrows){
                 echo"
                 <br>
-                <hr>";
+                ";
               }
 
             }

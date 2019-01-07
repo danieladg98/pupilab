@@ -23,6 +23,4 @@
 <script src="javascript/main.js"></script>
 
  <!-- index -->
-    <link href="main/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
     <link href="main/css/creative.css" rel="stylesheet">
