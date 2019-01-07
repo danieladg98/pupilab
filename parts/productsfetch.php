@@ -67,7 +67,7 @@ if (isset($_POST['lampadasdefenda'])) {
 } else if (isset($_POST['projetor'])) {
     header('Location: produtos.php?message=projetor');
 } else {
-    $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
+    $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Oftalmoscopicos'");
 }
 
 
@@ -171,7 +171,7 @@ if ($_GET['message'] == 'lampadasdefenda') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'OProjectores'");
     print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Projector\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
 } else {
-    header('Location: produtos.php?message=lampadasdefenda');
+    header('Location: produtos.php?message=oftalmoscopios');
 }
 
 

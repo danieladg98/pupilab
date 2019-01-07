@@ -132,7 +132,7 @@
                     <img src='". $linha['image'] ."' alt='Product Preview'>
                   </div>
 
-                  <div class='col-xl-6 col-lg-6 productinfo'>
+                  <div class='col-xl-7 col-lg-7 productinfo'>
                     <h4 class='oswald_title' id='producttitle'> ". $linha['title'] ." </h4>
                     <h5> ". $linha['subtitle'] ." </h5>
                     <p class='products_text'> ". $linha['description'] ." </p>
