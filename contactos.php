@@ -21,7 +21,7 @@
   ?>
 
 
-            <div class="row" style="width:100%;">
+            <div class="row" id="website_content">
 
                 <div class="col-1"> </div>
 
@@ -30,7 +30,7 @@
                     <div class="row" id="products_margin">
 
                         <div class="row" id="contatti">
-                            <div class="container mt-5">
+                            <div class="container">
 
                                 <div class="row" style="height:550px;">
                                     <div class="col-md-6 maps">
@@ -65,7 +65,7 @@
                                                         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensagem" rows="3" required></textarea>
                                                     </div>
                                                 </div>
-                                        
+
                                                 <div class="col-12">
                                                     <button class="btn btn-light" type="submit">Enviar</button>
                                                 </div>
