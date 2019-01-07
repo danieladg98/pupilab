@@ -29,7 +29,7 @@
 
             <!-- Grid column -->
             <div class="pupilab_padding col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-center mb-4 font-weight-bold">Pupilab</h6>
+                <h6 class="pupilab_text_footer text-center mb-4 font-weight-bold">Pupilab</h6>
 
                 <div class="text-center">
                     <ul class="list-unstyled list-inline">

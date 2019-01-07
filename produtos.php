@@ -21,7 +21,7 @@
   ?>
 
 
-            <div class="row" id="website_content">
+            <div class="row" id="products_margin" style="width:100%;">
 
                 <div class="col-1"> </div>
 
@@ -39,10 +39,10 @@
                                 </div>
                                 <div class="collapse collapsesubmenu" id="sub_menu1">
                                     <div class="col-1 in">
-                                        <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
                                         <input type="submit" name="oftalmoscopios" value="Oftalmoscópios">
                                         <input type="submit" name="retinoscopios" value="Retinoscópios">
                                         <input type="submit" name="retinometros" value="Retinómetros">
+                                          <input type="submit" name="lampadasdefenda" value="Lâmpadas de Fenda">
                                     </div>
                                 </div>
 
@@ -113,7 +113,7 @@
                         <div class="col-10">
 
                             <?php
-
+                          
             include_once 'parts/productsfetch.php';
 
             $nrows = mysqli_num_rows($resultados);
@@ -133,7 +133,7 @@
                     <h4 class='oswald_title'> ". $linha['title'] ." </h4>
                     <h5> ". $linha['subtitle'] ." </h5>
                     <p class='products_text'> ". $linha['description'] ." </p>
-                    <a href='". $linha['pdf'] ."' class='button' target='_blank'><i class='far fa-file-pdf'></i> Ver PDF</a>
+                    <a class='detalhes' href='". $linha['pdf'] ."' class='button' target='_blank'>VER DETALHES</a>
                   </div>
 
               </div>
