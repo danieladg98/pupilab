@@ -1,9 +1,6 @@
 <!-- Footer -->
 <footer class="page-footer font-small mdb-color pt-4">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-        <hr>
         <!-- Footer links -->
         <div class="row text-center text-md-left mt-3 pb-3">
 
@@ -67,9 +64,6 @@
         </div>
         <!-- Footer links -->
 
-
-    </div>
-    <!-- Footer Links -->
 
 </footer>
 <!-- Footer -->

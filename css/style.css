@@ -43,49 +43,6 @@ body {
     height: auto;
 }
 
-nav {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    z-index: 1000000;
-}
-
-#nav_branca {
-    background-color: white;
-}
-
-.navbar {
-    padding-top: 3vh;
-    margin-right: 10vw;
-    margin-left: 10vw;
-}
-
-#navmain a {
-    font-size: 0.7rem;
-    font-weight: 600;
-}
-
-#navmain a:hover {
-    text-decoration: underline;
-}
-
-.nav-item a {
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: .8rem;
-    margin-right: 3vw;
-}
-
-#navelse a {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: black;
-}
-
-#navelse a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
 .bodycontainer {
     width: 100%;
     margin: 0;
@@ -104,21 +61,11 @@ nav {
     font-size: 1.2rem;
 }
 
-#ver_produtos {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.8rem;
-    padding: 0.55% 1.2%;
-}
-
 .botao_main {
     margin-top: 2.5%;
 }
 
-#seta {
-    border: 1px solid white;
-    padding: 0.55% 0.5%;
-    margin-left: -0.5%;
-}
+
 
 .submenu {
     font-family: 'Oswald', sans-serif;

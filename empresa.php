@@ -12,46 +12,45 @@
 
 <body id="bd_else">
 
-  <?php
+    <?php
     include_once 'parts/navbar.php';
   ?>
 
-  <?php
+        <?php
     session_start();
   ?>
 
 
-  <div class="row" style="width:100%;">
+            <div class="row" style="width:100%;">
 
-    <div class="col-1"> </div>
+                <div class="col-1"> </div>
 
-    <div class="col-10 bodycontent">
+                <div class="col-10 bodycontent">
 
-      <div class="row">
+                    <div class="row flex-container-services" id="services_margin">
 
-        <h1>A Empresa</h1>
+                        <h2 class="separation-title oswald_title"> A EMPRESA </h2>
+                        <h5 class="service-description">Empresa fundada em 2006 na área da oftalmologia, optometria e optica. 
+                            <br><br>Vocacionada para a assistência técnica, manutenção e comércio de aparelhos e equipamentos.
+                            <br>
+                            <br> Criada para contribuir para a solução de avarias dos aparelhos/equipamentos com rapidez, eficiência e profissionalismo, reduzindo o transtorno causado pela sua paragem.
+                            <br>
+                            <br> Corpo técnico com formação atualizada e progressiva, sustentada na experiência adquirida ao longo de mais de duas décadas.
+                            <br>
+                            <br> Departamento técnico dotado de condições e meios para responderem aos pedidos dos nossos clientes tais como: aferição, calibragem e ensaios de equipamentos, aparelhos e instrumentos.
+                            <br>
+                            <br> Na área comercial cooperamos estreitamente com marcas/empresas formando parcerias saudáveis para soluções adequadas exigidas às necessidades dos clientes..</h5>
 
-        <p>
-          Empresa fundada em 2006 na área da oftalmologia, optometria e optica. Vocacionada para a assistência técnica, manutenção e comércio de aparelhos e equipamentos.
 
-          Criada para contribuir para a solução de avarias dos aparelhos/equipamentos com rapidez, eficiência e profissionalismo, reduzindo o transtorno causado pela sua paragem.
+                    </div>
+                </div>
 
-          Corpo técnico com formação atualizada e progressiva, sustentada na experiência adquirida ao longo de mais de duas décadas.
 
-          Departamento técnico dotado de condições e meios para responderem aos pedidos dos nossos clientes tais como: aferição, calibragem e ensaios de equipamentos, aparelhos e instrumentos.
+                <div class="col-1"> </div>
 
-          Na área comercial cooperamos estreitamente com marcas/empresas formando parcerias saudáveis para soluções adequadas exigidas às necessidades dos clientes.
-        </p>
+            </div>
 
-      </div>
-
-    </div>
-
-    <div class="col-1"> </div>
-
-  </div>
-
-  <?php
+            <?php
 
   include_once 'parts/footer.php';
 

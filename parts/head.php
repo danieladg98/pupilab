@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -21,3 +21,8 @@
 <script src="javascript/globalvars.js"></script>
 
 <script src="javascript/main.js"></script>
+
+ <!-- index -->
+    <link href="main/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="main/css/creative.css" rel="stylesheet">

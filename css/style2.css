@@ -151,8 +151,38 @@
     padding: 2% 3%;
 }
 
+.detalhes_white{
+    border: 1px solid white;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 1% 2%;
+}
+
 .detalhes:hover{
  color: white;
 background-color: #DF4743;
     text-decoration: none;
+}
+
+.detalhes_white:hover{
+ color: black;
+background-color: white;
+    text-decoration: none;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+.cover-container {
+    max-width: 42em;
+}
+
+main{
+    display:block;
 }
