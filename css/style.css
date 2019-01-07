@@ -152,31 +152,31 @@ nav {
 }
 
 .dontLooseFocus {
-    outline: 2px solid white !important;
+    outline: 2px solid transparent !important;
     color: black !important;
     text-decoration: underline !important;
 }
 
 input[type=submit]:focus {
-    outline: 2px solid white;
+    outline: 2px solid transparent;
     text-decoration: underline;
     color: black;
 }
 
 input[type=submit]:hover {
-    outline: 2px solid white;
+    outline: 2px solid transparent;
     text-decoration: underline;
     color: black;
 }
 
 input[type=button]:focus {
-    outline: 2px solid white;
+    outline: 2px solid transparent;
     text-decoration: underline;
     color: black;
 }
 
 input[type=button]:hover {
-    outline: 2px solid white;
+    outline: 2px solid transparent;
     text-decoration: underline;
     color: black;
 }

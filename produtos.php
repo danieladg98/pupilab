@@ -86,7 +86,7 @@
                                 <div class="collapse collapsesubmenu" id="sub_menu4">
                                     <div class="col-1 in">
                                         <input type="submit" name="biseladoras" value="Biseladoras">
-                                        <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
+                                        <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/&#10;Acabamentos/Ranhuras">
                                         <input type="submit" name="polidoras" value="Polidoras">
                                         <input type="submit" name="ultrasons" value="Ultrassons">
                                         <input type="submit" name="ventilete" value="Ventilete">
@@ -129,7 +129,7 @@
               <div class='row row_products'>
 
                   <div class='col-xl-5 col-lg-5 productmedia text-center'>
-                    <img src='". $linha['image'] ."' alt='Product Preview'>
+                    <img class='img-fluid' src='". $linha['image'] ."' alt='Product Preview'>
                   </div>
 
                   <div class='col-xl-7 col-lg-7 productinfo'>
