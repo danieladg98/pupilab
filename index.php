@@ -26,7 +26,7 @@
 
     <div class="col-10">
 
-      <div class="row">
+      <div class="row mx-auto text-center">
         <div class="container-fluid main_text animated fadeInUp slower">
             <center>
                 <p class="white">Assistência Técnica, Manutenção e Comércio de Aparelhos
@@ -35,8 +35,7 @@
         </div>
           <div class="container-fluid botao_main animated fadeInUp slower">
             <center>
-                <a id="ver_produtos" class="white borderwhite">VER PRODUTOS</a>
-                <a id="seta" class"borderwhite">  <i class="fas fa-caret-right fa-lg white"></i> </a>
+                <a href="produtos.php" class="detalhes_white">VER PRODUTOS</a>
             </center>
         </div>
       </div>

@@ -12,7 +12,8 @@
 
 <body id="bd_else">
 
-    <?php
+     <?php
+    $current = 'produtos';
     include_once 'parts/navbar.php';
   ?>
 
@@ -206,7 +207,6 @@
                   <br>
                   <hr>";
                 }
-
               }
 
             }

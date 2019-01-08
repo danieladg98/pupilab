@@ -11,8 +11,10 @@
 </head>
 
 <body id="bd_else">
-
+    
+    
     <?php
+    $current = 'contactos';
     include_once 'parts/navbar.php';
   ?>
 
@@ -34,7 +36,7 @@
 
                                 <div class="row" style="height:550px;">
                                     <div class="col-md-6 maps">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Reboreda%2C%20Vila%20Nova%20de%20Cerveira%2C%20Portugal+(Pupilab)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Plot a route map</a></iframe>
                                     </div>
                                     <div class="col-md-5 contacts_padding_left">
                                         <h2 class="oswald_title title_margin text-uppercase mt-3">CONTACTE-NOS</h2>

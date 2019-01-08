@@ -1,26 +1,24 @@
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
+<div id="app" class="container">
+    <footer class="page-footer font-small mdb-color pt-4">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-        <hr>
         <!-- Footer links -->
         <div class="row text-center text-md-left mt-3 pb-3">
 
             <!-- Grid column -->
+            <hr class="w-100 clearfix">
 
-            <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3  text-center">
                 <p>
-                    <a class="font-weight-bold" href="#!">Empresa</a>
+                    <a class="font-weight-bold" href="empresa.php">Empresa</a>
                 </p>
                 <p>
-                    <a class="font-weight-bold" href="#!">Serviços</a>
+                    <a class="font-weight-bold" href="servicos.php">Serviços</a>
                 </p>
                 <p>
-                    <a class="font-weight-bold" href="#!">Produtos</a>
+                    <a class="font-weight-bold" href="produtos.php">Produtos</a>
                 </p>
             </div>
             <!-- Grid column -->
@@ -28,7 +26,7 @@
             <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-            <div class="pupilab_padding col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <div class="pupilab_padding col-md-4 col-lg-4 col-xl-4 mx-auto mt-3  text-center">
                 <h6 class="pupilab_text_footer text-center mb-4 font-weight-bold">Pupilab</h6>
 
                 <div class="text-center">
@@ -52,9 +50,9 @@
             <hr class="w-100 clearfix d-md-none">
 
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 text-center">
                 <p>
-                    <a class="font-weight-bold" href="#!">Contactos</a>
+                    <a class="font-weight-bold" href="contactos.php">Contactos</a>
                 </p>
                 <p>
                     <i class="fas fa-envelope mr-3"></i> geral@pupilab.com</p>
@@ -68,8 +66,6 @@
         <!-- Footer links -->
 
 
-    </div>
-    <!-- Footer Links -->
-
-</footer>
+    </footer>
+</div>
 <!-- Footer -->

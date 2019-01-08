@@ -12,7 +12,8 @@
 
 <body id="bd_else">
 
-    <?php
+      <?php
+    $current = 'servicos';
     include_once 'parts/navbar.php';
   ?>
 
@@ -21,70 +22,58 @@
   ?>
 
 
-            <div class="row" style="width:100%;">
-
-                <div class="col-1"> </div>
-
-                <div class="col-10 bodycontent">
-
-                    <div class="row flex-container-services" id="services_margin">
-
-                        <h2 class="separation-title oswald_title"> OS NOSSOS SERVIÇOS </h2>
-                        <h5 class="service-description">Para além do comércio de aparelhos e equipamentos oftalmológicos,<br> a Pupilab oferece também diversos serviços.</h5>
-
-                        <!-- start of Web dev container -->
-                        <div class="flex-item-services d-flex justify-content-center">
-                            <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-tools" aria-hidden="true"></i>
-                            </figure>
-                            <div class="title-services"> Assistência técnica e reparação </div>
-
-                        </div>
-
-                        <div class="flex-item-services d-flex justify-content-center">
-                            <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-toolbox" aria-hidden="true"></i>
-                            </figure>
-                            <div class="title-services"> Reparação Multimarca </div>
-                        </div>
-
-                        <div class="flex-item-services d-flex justify-content-center">
-                            <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-hands-helping" aria-hidden="true"></i>
-                            </figure>
-                            <div class="title-services text-center"> Assistência Técnica preventiva e/ou correctiva </div>
-                        </div>
-
-
-                        <div class="flex-item-services d-flex justify-content-center">
-                            <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-file-signature" aria-hidden="true"></i>
-                            </figure>
-                            <div class="title-services"> Contrato de manutenção</div>
-                        </div>
-
-                        <div class="flex-item-services d-flex justify-content-center">
-                            <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-plug" aria-hidden="true"></i>
-                            </figure>
-                            <div class="title-services"> Instalação</div>
-                        </div>
-
-                        <div class="flex-item-services d-flex justify-content-center">
-                            <figure class=services-icon>
-                                <i style="color: #DF4743" class="fa fa-cogs" aria-hidden="true"></i>
-                            </figure>
-                            <div class="title-services">Montagem</div>
-                        </div>
-
-                    </div>
-
+           <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading oswald_title">OS NOSSOS SERVIÇOS</h2>
+                    <hr class="hr_red my-4">
+                    <p class="service-description">Para além do comércio de aparelhos e equipamentos oftalmológicos,<br> a Pupilab oferece também diversos serviços.</p>
                 </div>
-
-                <div class="col-1"> </div>
-
             </div>
-
+        </div>
+        <div class="container">
+            <div class="row services_row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-2x fa-tools mb-3 sr-icon-1 animated fadeInUp" id="icon_color"></i>
+                        <p class="mb-3">Assistência técnica e reparação</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-2x fa-toolbox mb-3 sr-icon-2 animated fadeInUp" id="icon_color"></i>
+                        <p class="mb-3">Reparação Multimarca</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-2x fa-hands-helping mb-3 sr-icon-3 animated fadeInUp" id="icon_color"></i>
+                        <p class="mb-3">Assistência Técnica preventiva e/ou correctiva</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-2x fa-file-signature mb-3 sr-icon-4 animated fadeInUp" id="icon_color"></i>
+                        <p class="mb-3">Contrato de manutenção</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-2x fa-plug mb-3 sr-icon-4 animated fadeInUp" id="icon_color"></i>
+                        <p class="mb-3">Instalação</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-2x fa-cogs mb-3 sr-icon-4 animated fadeInUp" id="icon_color"></i>
+                        <p class="mb-3">Montagem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
             <?php
 
   include_once 'parts/footer.php';
