@@ -9,16 +9,21 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="empresa.php">A Empresa</a>
+                    
+                        <a <?php if($current == 'empresa') echo " id=\"currentpage\""; ?>
+                           class="nav-link" href="empresa.php">A Empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="servicos.php">Serviços</a>
+                        <a <?php if($current == 'servicos') echo " id=\"currentpage\""; ?>
+                           class="nav-link" href="servicos.php">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="produtos.php">Produtos</a>
+                        <a <?php if($current == 'produtos') echo " id=\"currentpage\""; ?>
+                           class="nav-link" href="produtos.php">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactos.php">Contactos</a>
+                        <a<?php if($current == 'contactos') echo " id=\"currentpage\""; ?>
+                         class="nav-link" href="contactos.php">Contactos</a>
                     </li>
                 </ul>
             </div>

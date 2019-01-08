@@ -11,8 +11,10 @@
 </head>
 
 <body id="bd_else">
-
+    
+    
     <?php
+    $current = 'contactos';
     include_once 'parts/navbar.php';
   ?>
 

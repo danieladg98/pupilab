@@ -12,7 +12,8 @@
 
 <body id="bd_else">
 
-    <?php
+      <?php
+    $current = 'servicos';
     include_once 'parts/navbar.php';
   ?>
 

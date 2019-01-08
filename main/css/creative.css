@@ -128,27 +128,6 @@
             color: #fff;
         }
         
-        header.masthead {
-            padding-top: 10rem;
-            padding-bottom: calc(10rem - 56px);
-            background-image: url("../../media/images/index.jpg");
-            background-position: center center;
-            background-size: cover;
-        }
-        
-        header.masthead hr {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        
-        header.masthead h1 {
-            font-size: 2rem;
-        }
-        
-        header.masthead p {
-            font-weight: 300;
-        }
-        
         #icon_color {
             color: #DF4743;
         }
@@ -157,7 +136,22 @@
             max-width: 400px;
         }
         
+        #currentpage {
+            color: rgb(0, 0, 0, 0.5)!important;
+        }
+        
+        .navbar-dark .navbar-toggler {
+            color: rgba(255, 255, 255, 0);
+            border-color: rgba(255, 255, 255, 0);
+        }
+.br_mobile{
+    display:none;
+}
+        
         @media only screen and (max-width: 700px) {
+            .br_mobile{
+    display:flex;
+}
             .main_text p {
                 font-size: 1.1rem;
             }
@@ -166,7 +160,7 @@
                 font-size: 0.75rem;
             }
             section {
-                padding: 10rem 0 0 0;
+                padding: 8rem 0 0 0;
             }
             #about {
                 margin-top: 0;
@@ -189,7 +183,7 @@
             #products_margin {
                 padding: 20vh 1vw 0 2vw;
             }
-            .navbar-light .navbar-toggler{
-                border-color:rgb(0,0,0,0)!important;
+            .navbar-light .navbar-toggler {
+                border-color: rgb(0, 0, 0, 0)!important;
             }
         }
