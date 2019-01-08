@@ -35,37 +35,37 @@
             <div class="row services_row">
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-3x fa-tools text-primary mb-3 sr-icon-1"></i>
+                        <i class="fas fa-2x fa-tools mb-3 sr-icon-1 animated fadeInUp" id="icon_color"></i>
                         <p class="mb-3">Assistência técnica e reparação</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-3x fa-toolbox text-primary mb-3 sr-icon-2"></i>
+                        <i class="fas fa-2x fa-toolbox mb-3 sr-icon-2 animated fadeInUp" id="icon_color"></i>
                         <p class="mb-3">Reparação Multimarca</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-3x fa-hands-helping text-primary mb-3 sr-icon-3"></i>
+                        <i class="fas fa-2x fa-hands-helping mb-3 sr-icon-3 animated fadeInUp" id="icon_color"></i>
                         <p class="mb-3">Assistência Técnica preventiva e/ou correctiva</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-3x fa-file-signature text-primary mb-3 sr-icon-4"></i>
+                        <i class="fas fa-2x fa-file-signature mb-3 sr-icon-4 animated fadeInUp" id="icon_color"></i>
                         <p class="mb-3">Contrato de manutenção</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-3x fa-plug text-primary mb-3 sr-icon-4"></i>
+                        <i class="fas fa-2x fa-plug mb-3 sr-icon-4 animated fadeInUp" id="icon_color"></i>
                         <p class="mb-3">Instalação</p>
                     </div>
                 </div>
                  <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i class="fas fa-3x fa-cogs text-primary mb-3 sr-icon-4"></i>
+                        <i class="fas fa-2x fa-cogs mb-3 sr-icon-4 animated fadeInUp" id="icon_color"></i>
                         <p class="mb-3">Montagem</p>
                     </div>
                 </div>

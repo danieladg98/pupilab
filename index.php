@@ -26,7 +26,7 @@
 
     <div class="col-10">
 
-      <div class="row">
+      <div class="row mx-auto text-center">
         <div class="container-fluid main_text animated fadeInUp slower">
             <center>
                 <p class="white">Assistência Técnica, Manutenção e Comércio de Aparelhos

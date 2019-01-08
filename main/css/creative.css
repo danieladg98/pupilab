@@ -3,183 +3,190 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
-    
-    body,
-    html {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .hr_red {
-        max-width: 50px;
-        border-width: 3px;
-        border-color: #DF4743;
-    }
-    
-    
-    .detalhes_main {
-        border: 1px solid #DF4743;
-        color: #DF4743;
-        font-family: 'Oswald', sans-serif;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        padding: 2% 3%;
-    }
-    
-    .btn-main {
-        padding-top: 3%;
-    }
-    
-    .detalhes_main:hover {
-        color: white;
-        background-color: #DF4743;
-        text-decoration: none;
-    }
-    
-    .title_main {
-        font-size: 1.2rem;
-        line-height: 150%;
-    }
-    
-    .main_p {
-        margin-top: 5%;
-    }
-    
-    section {
-        padding: 8rem 0;
-    }
-    
-    .section-heading {
-        margin-top: 0;
-    }
-    
-    ::-moz-selection {
-        color: #fff;
-        background: #212529;
-        text-shadow: none;
-    }
-    
-    ::selection {
-        color: black;
-        background: #212529;
-        text-shadow: none;
-    }
-    
-    img::-moz-selection {
-        color: black;
-        background: transparent;
-    }
-    
-    img::selection {
-        color: black;
-        background: transparent;
-    }
-    
-    img::-moz-selection {
-        color: black;
-        background: transparent;
-    }
-    
-    #mainNav {
-        border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-        background-color: #fff;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-    }
-    
-    #mainNav .navbar-nav>li.nav-item>a.nav-link,
-    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-        font-size: .9rem;
-        font-weight: 700;
-        color: rgb(0, 0, 0, 0.8);
-    }
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
-    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
-        color: rgb(0, 0, 0, 0.5);
-    }
-
-  
-    #mainNav .navbar-nav>li.nav-item>a.nav-link {
-        padding: 0.5rem 1rem;
-    }
-    
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link,
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link:focus {
-        font-size: .9rem;
-        font-weight: 700;
-        color: #212529;
-    }
-    
-    #mainNav_white {
-        border-color: transparent;
-        background-color: transparent;
-    }
-    
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link {
-        padding: 0.5rem 1rem;
-    }
-    
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link,
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link:focus {
-        color: rgb(255, 255, 255, 0.8);
-    }
-    
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link:hover,
-    #mainNav_white .navbar-nav>li.nav-item>a.nav-link:focus:hover {
-        color: #fff;
-    }
-
-    
-    header.masthead {
-        padding-top: 10rem;
-        padding-bottom: calc(10rem - 56px);
-        background-image: url("../../media/images/index.jpg");
-        background-position: center center;
-        background-size: cover;
-    }
-    
-    header.masthead hr {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    
-    header.masthead h1 {
-        font-size: 2rem;
-    }
-    
-    header.masthead p {
-        font-weight: 300;
-    }
-    
-    @media (min-width: 768px) {
-        header.masthead p {
-            font-size: 1.15rem;
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
         }
-    }
-    
-    @media (min-width: 992px) {
+        
+        .hr_red {
+            max-width: 50px;
+            border-width: 3px;
+            border-color: #DF4743;
+        }
+        
+        .detalhes_main {
+            border: 1px solid #DF4743;
+            color: #DF4743;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding: 2% 3%;
+        }
+        
+        .btn-main {
+            padding-top: 3%;
+        }
+        
+        .detalhes_main:hover {
+            color: white;
+            background-color: #DF4743;
+            text-decoration: none;
+        }
+        
+        .title_main {
+            font-size: 1.2rem;
+            line-height: 150%;
+        }
+        
+        .main_p {
+            margin-top: 5%;
+        }
+        
+        section {
+            padding: 8rem 0;
+        }
+        
+        .section-heading {
+            margin-top: 0;
+        }
+        
+         ::-moz-selection {
+            color: #fff;
+            background: #212529;
+            text-shadow: none;
+        }
+        
+         ::selection {
+            color: black;
+            background: #212529;
+            text-shadow: none;
+        }
+        
+        img::-moz-selection {
+            color: black;
+            background: transparent;
+        }
+        
+        img::selection {
+            color: black;
+            background: transparent;
+        }
+        
+        img::-moz-selection {
+            color: black;
+            background: transparent;
+        }
+        
+        #mainNav {
+            border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+            background-color: #fff;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        
+        #mainNav .navbar-nav>li.nav-item>a.nav-link,
+        #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+            font-size: .9rem;
+            font-weight: 700;
+            color: rgb(0, 0, 0, 0.8);
+        }
+        
+        #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
+        #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+            color: rgb(0, 0, 0, 0.5);
+        }
+        
+        #mainNav .navbar-nav>li.nav-item>a.nav-link {
+            padding: 0.5rem 1rem;
+        }
+        
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link,
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link:focus {
+            font-size: .9rem;
+            font-weight: 700;
+            color: #212529;
+        }
+        
+        #mainNav_white {
+            border-color: transparent;
+            background-color: transparent;
+        }
+        
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link {
+            padding: 0.5rem 1rem;
+        }
+        
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link,
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link:focus {
+            color: rgb(255, 255, 255, 0.8);
+        }
+        
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link:hover,
+        #mainNav_white .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+            color: #fff;
+        }
+        
         header.masthead {
-            height: 100vh;
-            min-height: 650px;
-            padding-top: 0;
-            padding-bottom: 0;
+            padding-top: 10rem;
+            padding-bottom: calc(10rem - 56px);
+            background-image: url("../../media/images/index.jpg");
+            background-position: center center;
+            background-size: cover;
         }
+        
+        header.masthead hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
         header.masthead h1 {
-            font-size: 3rem;
+            font-size: 2rem;
         }
-    }
-    
-    @media (min-width: 1200px) {
-        header.masthead h1 {
-            font-size: 4rem;
+        
+        header.masthead p {
+            font-weight: 300;
         }
-    }
-    
-    .service-box {
-        max-width: 400px;
-    }
-    
-    @media (min-width: 768px) {
-        .text-primary {
-            color: #DF4743 !important;
+        
+        #icon_color {
+            color: #DF4743;
+        }
+        
+        .service-box {
+            max-width: 400px;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .main_text p {
+                font-size: 1.1rem;
+            }
+            .main_text {}
+            .detalhes_white {
+                font-size: 0.75rem;
+            }
+            section {
+                padding: 10rem 0 0 0;
+            }
+            #about {
+                margin-top: 0;
+            }
+            /*#about .text-center {
+                text-align: justify!important;
+            }*/
+            .contacts_padding_left {
+                padding: 2rem;
+            }
+            .title_margin {
+                text-align: center!important;
+            }
+            .navbar-brand {
+                width: 45%;
+            }
+            .navbar-brand img {
+                width: 90%;
+            }
+            #products_margin {
+                padding: 20vh 1vw 0 2vw;
+            }
         }
