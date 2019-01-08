@@ -6,7 +6,7 @@
         <div class="row text-center text-md-left mt-3 pb-3">
 
             <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
+            <hr class="w-100 clearfix">
 
 
             <!-- Grid column -->

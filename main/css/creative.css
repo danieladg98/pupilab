@@ -189,4 +189,7 @@
             #products_margin {
                 padding: 20vh 1vw 0 2vw;
             }
+            .navbar-light .navbar-toggler{
+                border-color:rgb(0,0,0,0)!important;
+            }
         }
