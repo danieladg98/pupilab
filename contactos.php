@@ -42,27 +42,27 @@
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control mt-2" placeholder="Nome" required>
+                                                        <input type="text" class="form-control mt-2" placeholder="Nome" name="nome" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control mt-2" placeholder="Apelido" required>
+                                                        <input type="text" class="form-control mt-2" placeholder="Apelido" name="apelido" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control mt-2" placeholder="Email" required>
+                                                        <input type="email" class="form-control mt-2" placeholder="Email" name="email" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control mt-2" placeholder="Telefone" required>
+                                                        <input type="text" class="form-control mt-2" placeholder="Telefone" name="telefone" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-group">
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensagem" rows="3" required></textarea>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensagem" name="mensagem" rows="3" required></textarea>
                                                     </div>
                                                 </div>
 
@@ -71,6 +71,10 @@
                                                 </div>
                                             </div>
                                         </form>
+
+                                        <?php
+                                          include 'parts/emailsender.php';
+                                        ?>
                                         <div class="list_contacts">
                                             <i class="fas fa-phone mt-3"></i> <a href="tel:+">+351 251 798 632</a><br>
                                             <i class="fa fa-envelope mt-3"></i> <a href="">geral@pupilab.com</a><br>
