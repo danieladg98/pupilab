@@ -10,6 +10,8 @@ $(document).ready(function(){
   let clicks4open = 0;
   let clicks5open = 0;
 
+  let submenuClicks = 0;
+
   $("#category1").click(function(){
     clicks1++; clicks1open++; clicks2 = 0; clicks3 = 0; clicks4 = 0; clicks5 = 0;
     if(clicks1 % 2 == 0){$("#category1").blur();}
@@ -93,6 +95,38 @@ $(document).ready(function(){
       if(!category3selected){$("#sub_menu3").collapse('hide');}
       if(!category4selected){$("#sub_menu4").collapse('hide');}
     }
+  });
+
+  $("#submenuToggler").click(function(){
+    submenuClicks++;
+    if(submenuClicks%2 != 0){
+      $(".submenu").removeClass("animated fadeOutLeft");
+      $(".submenu").css("display", "inherit");
+      $(".submenu").addClass("animated fadeInLeft");
+    }else if(submenuClicks%2 == 0){
+      $(".submenu").removeClass("animated fadeInLeft");
+      $(".submenu").css("display", "none");
+      $(".submenu").addClass("animated fadeOutLeft");
+    }
+
+  });
+
+  $(".duohover1").hover(function(){
+    $(".duohover1").addClass("dontLooseFocus");
+  }, function(){
+    $(".duohover1").removeClass("dontLooseFocus");
+  });
+
+  $(".duohover2").hover(function(){
+    $(".duohover2").addClass("dontLooseFocus");
+  }, function(){
+    $(".duohover2").removeClass("dontLooseFocus");
+  });
+
+  $(".duohover3").hover(function(){
+    $(".duohover3").addClass("dontLooseFocus");
+  }, function(){
+    $(".duohover3").removeClass("dontLooseFocus");
   });
 
 });
