@@ -67,7 +67,7 @@ if (isset($_POST['lampadasdefenda'])) {
 } else if (isset($_POST['projetor'])) {
     header('Location: produtos.php?message=projetor');
 } else {
-    $resultados = mysqli_query($conn, "select id, title, subtitle, category, subcategory, image from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Outro'");
+    $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Oftalmoscopicos'");
 }
 
 
@@ -109,10 +109,10 @@ if ($_GET['message'] == 'lampadasdefenda') {
     print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Armações de Prova\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
 } else if ($_GET['message'] == 'frontofocometrosinterna') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Frontofocometros L/Interna'");
-    print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Frontofocómetros L/ Interna\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
+    print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Frontofocómetros \']').focus().addClass('dontLooseFocus'); $('input[value=\'L/ Interna\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
 } else if ($_GET['message'] == 'frontofocometrosdigitais') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Frontofocometros Digitais'");
-    print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Frontofocómetros Digitais\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
+    print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Frontofocómetros\']').focus().addClass('dontLooseFocus'); $('input[value=\'Digitais\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
 } else if ($_GET['message'] == 'arkeratometros') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Refracao' AND subcategory = 'Arkeratometros'");
     print"<script> $('#sub_menu2').addClass('transition_none'); $('#sub_menu2').collapse(); $('#sub_menu2').removeClass('transition_none'); $('input[value=\'Arkeratómetros\']').focus().addClass('dontLooseFocus'); category2selected=true; </script>";
@@ -142,7 +142,7 @@ if ($_GET['message'] == 'lampadasdefenda') {
     print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Biseladoras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
 } else if ($_GET['message'] == 'maquinasacabamentosranhuras') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Maquinas / Acabamentos / Ranhuras'");
-    print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Máquinas/Acabamentos/Ranhuras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
+    print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Máquinas/\']').focus().addClass('dontLooseFocus'); $('input[value=\'Acabamentos/Ranhuras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
 } else if ($_GET['message'] == 'polidoras') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Oficina / Opticas' AND subcategory = 'Polidoras'");
     print"<script> $('#sub_menu4').addClass('transition_none'); $('#sub_menu4').collapse(); $('#sub_menu4').removeClass('transition_none'); $('input[value=\'Polidoras\']').focus().addClass('dontLooseFocus'); category4selected=true; </script>";
@@ -168,10 +168,10 @@ if ($_GET['message'] == 'lampadasdefenda') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Lampadas de Fenda'");
     print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Lâmpada de Fenda\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
 } else if ($_GET['message'] == 'projetor') {
-    $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'OProjectores'");
+    $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Projectores'");
     print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Projector\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
 } else {
-    header('Location: produtos.php?message=lampadasdefenda');
+    header('Location: produtos.php?message=oftalmoscopios');
 }
 
 

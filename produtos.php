@@ -30,11 +30,13 @@
 
                     <div class="row">
 
-                        <div class="lateral col-2 submenu ">
-                            <h2 class="oswald_title">PRODUTOS</h2>
+                        <h4 class="oswald_title" id="submenutitle2">PRODUTOS</h4>
+                        <button id="submenuToggler"> submenu </button>
 
+                        <div class="lateral col-2 submenu ">
+                            <h4 class="oswald_title" id="submenutitle1">PRODUTOS</h4>
                             <br>
-                            <form method="post" action="">
+                            <form method="post" action="" id="submenuform">
                                 <div>
                                     <input id="category1" type="button" data-toggle="collapse" data-target="#sub_menu1" aria-expanded="false" aria-controls="sub_menu1" value="Observação">
                                 </div>
@@ -60,8 +62,10 @@
                                         <input type="submit" name="mesaseletricas" value="Mesas Electricas">
                                         <input type="submit" name="caixadelentes" value="Caixa de Lentes">
                                         <input type="submit" name="armacoesdeprova" value="Armações de Prova">
-                                        <input type="submit" name="frontofocometrosinterna" value="Frontofocómetros L/ Interna">
-                                        <input type="submit" name="frontofocometrosdigitais" value="Frontofocómetros Digitais">
+                                        <input id="categorybreak" class="duohover1" type="submit" name="frontofocometrosinterna" value="Frontofocómetros ">
+                                        <input type="submit" class="duohover1" name="frontofocometrosinterna" value="L/ Interna">
+                                        <input id="categorybreak" class="duohover2" type="submit" name="frontofocometrosdigitais" value="Frontofocómetros">
+                                        <input type="submit" class="duohover2" name="frontofocometrosdigitais" value="Digitais">
                                         <input type="submit" name="arkeratometros" value="Arkeratómetros">
                                     </div>
                                 </div>
@@ -87,7 +91,8 @@
                                 <div class="collapse collapsesubmenu" id="sub_menu4">
                                     <div class="col-1 in">
                                         <input type="submit" name="biseladoras" value="Biseladoras">
-                                        <input type="submit" name="maquinasacabamentosranhuras" value="Máquinas/Acabamentos/Ranhuras">
+                                        <input id="categorybreak" class="duohover3" type="submit" name="maquinasacabamentosranhuras" value="Máquinas/">
+                                        <input type="submit" class="duohover3" name="maquinasacabamentosranhuras" value="Acabamentos/Ranhuras">
                                         <input type="submit" name="polidoras" value="Polidoras">
                                         <input type="submit" name="ultrasons" value="Ultrassons">
                                         <input type="submit" name="ventilete" value="Ventilete">
@@ -111,7 +116,7 @@
                             </form>
                         </div>
 
-                        <div class="col-10 pl-4">
+                        <div class="col-xl-10 col-lg-10 pl-4">
 
           <?php
 
@@ -125,28 +130,83 @@
 
               $iteration_counter++;
 
-              echo "
+              if($linha['full_article'] == 0) {
 
-              <div class='row row_products'>
+                echo "
 
-                  <div class='col-xl-5 col-lg-5 productmedia text-center'>
-                    <img src='". $linha['image'] ."' alt='Product Preview'>
-                  </div>
+                <div class='row row_products'>
+                    <div class='col-xl-7 col-lg-7 productinfo'>
+                      <h4 class='oswald_title' id='producttitle'> ". $linha['title'] ." </h4>
+                      <h2 class='oswald_title title_margin text-uppercase mt-3'>Sob Orçamento</h2>
+                      <form action=''>
+                          <div class='row'>
+                              <div class='col-lg-6'>
+                                  <div class='form-group'>
+                                      <input type='text' class='form-control mt-2' placeholder='Nome' required>
+                                  </div>
+                              </div>
+                              <div class='col-lg-6'>
+                                  <div class='form-group'>
+                                      <input type='text' class='form-control mt-2' placeholder='Apelido' required>
+                                  </div>
+                              </div>
+                              <div class='col-lg-6'>
+                                  <div class='form-group'>
+                                      <input type='email' class='form-control mt-2' placeholder='Email' required>
+                                  </div>
+                              </div>
+                              <div class='col-lg-6'>
+                                  <div class='form-group'>
+                                      <input type='text' class='form-control mt-2' placeholder='Telefone' required>
+                                  </div>
+                              </div>
+                              <div class='col-12'>
+                                  <div class='form-group'>
+                                      <textarea class='form-control' id='exampleFormControlTextarea1' placeholder='Mensagem' rows='3' required></textarea>
+                                  </div>
+                              </div>
 
-                  <div class='col-xl-6 col-lg-6 productinfo'>
-                    <h4 class='oswald_title' id='producttitle'> ". $linha['title'] ." </h4>
-                    <h5> ". $linha['subtitle'] ." </h5>
-                    <p class='products_text'> ". $linha['description'] ." </p>
-                    <a class='detalhes' href='". $linha['pdf'] ."' class='button' target='_blank'>VER DETALHES</a>
-                  </div>
+                              <div class='col-12'>
+                                  <button class='detalhes' type='submit'>ENVIAR</button>
+                              </div>
+                          </div>
+                      </form>
+                    </div>
 
-              </div>
-              ";
-
-              if($iteration_counter != $nrows){
-                echo"
-                <br>
+                </div>
                 ";
+
+                if($iteration_counter != $nrows){
+                  echo"
+                  <br>
+                  <hr>";
+                }
+
+              } else {
+
+                echo "
+
+                <div class='row row_products'>
+
+                    <div class='col-xl-5 col-lg-5 productmedia text-center'>
+                      <img class='img-fluid' src='". $linha['image'] ."' alt='Product Preview'>
+                    </div>
+
+                    <div class='col-xl-7 col-lg-7 productinfo'>
+                      <h4 class='oswald_title' id='producttitle'> ". $linha['title'] ." </h4>
+                      <h5> ". $linha['subtitle'] ." </h5>
+                      <p class='products_text'> ". $linha['description'] ." </p>
+                      <a class='detalhes' href='". $linha['pdf'] ."' class='button' target='_blank'>VER DETALHES</a>
+                    </div>
+
+                </div>
+                ";
+
+                if($iteration_counter != $nrows){
+                  echo"
+                  <br>
+                  <hr>";
+                }
               }
 
             }
