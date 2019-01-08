@@ -19,7 +19,6 @@ if (isset($_POST['submit'])) {
           $para = $escapedMail; // Send email to our user
           $assunto = 'Contacto Pupilab'; // Give the email a subject
           $mensagem = '
-
           Obrigado por se registar em Vinyl Records!
           A sua conta foi criada, pode fazer o login no nosso website com as credenciais que utilizou e confirmadas abaixo, logo após verificar a sua conta através do link fornecido.
 
