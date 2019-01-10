@@ -20,17 +20,17 @@
     include_once 'parts/navbar_main.php';
   ?>
 
-  <div class="row">
+  <div class="row align-items-center">
 
     <div class="col-1"> </div>
 
     <div class="col-10">
 
-      <div class="row mx-auto text-center">
-        <div class="container-fluid main_text animated fadeInUp slower">
+      <div class="row align-items-center mx-auto text-center">
+        <div class="container-fluid  main_text animated fadeInUp slower">
             <center>
-                <p class="white">Assistência Técnica, Manutenção e Comércio de Aparelhos
-                    <br> e Equipamentos Oftalmológicos</p>
+                <p class="white">Assistência Técnica, <br class="br_mobile"> Manutenção e Comércio <br class="br_mobile"> de Aparelhos
+                    <br class="br_desktop">e Equipamentos <br class="br_mobile">Oftalmológicos</p>
             </center>
         </div>
           <div class="container-fluid botao_main animated fadeInUp slower">

@@ -31,7 +31,7 @@
                     <div class="row">
 
                         <h4 class="oswald_title" id="submenutitle2">PRODUTOS</h4>
-                        <button id="submenuToggler"> submenu </button>
+                        <button id="submenuToggler"> <i class="fas plus_margin fa-lg fa-plus mb-3 sr-icon-2" id="icon_color"></i> </button>
 
                         <div class="lateral col-2 submenu ">
                             <h4 class="oswald_title" id="submenutitle1">PRODUTOS</h4>

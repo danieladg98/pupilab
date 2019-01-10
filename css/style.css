@@ -12,7 +12,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-   overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 #bd_else {
@@ -82,15 +82,15 @@ body {
 }
 
 #submenuToggler {
-  display: none;
+    display: none;
 }
 
-#submenutitle1{
-  display: inherit;
+#submenutitle1 {
+    display: inherit;
 }
 
-#submenutitle2{
-  display: none;
+#submenutitle2 {
+    display: none;
 }
 
 .oswald_title {
@@ -138,8 +138,8 @@ input[type=button]:hover {
     color: black;
 }
 
-#categorybreak{
-  margin-bottom: -1rem;
+#categorybreak {
+    margin-bottom: -1rem;
 }
 
 .row_products {
@@ -158,53 +158,53 @@ input[type=button]:hover {
 }
 
 .pupilab_padding {
-    padding-top:2.5vh;
+    padding-top: 2.5vh;
 }
 
-.pupilab_text_footer{
-     color: #2DA037;
+.pupilab_text_footer {
+    color: #2DA037;
 }
 
 @media (max-width: 992px) {
-
-  #producttitle{
-    margin-top: 2rem !important;
-  }
-
-  #submenutitle1{
-    display: none;
-  }
-
-  #submenutitle2{
-    display: inherit;
-  }
-
-  .submenu{
-    position: absolute;
-    display: none;
-    margin-top: 5vh;
-    height: 100%;
-  }
-
-  .submenu input{
-    margin-bottom: 0.5vh;
-  }
-
-  #submenuform{
-    background-color: rgba(255,255,255,1);
-    width:175px !important;
-  }
-
-  #products_margin{
-    padding-top: 15vh;
-  }
-
-  #submenuToggler{
-    display: inherit;
-  }
-
+    #producttitle {
+        margin-top: 2rem !important;
+    }
+    #submenutitle1 {
+        display: none;
+    }
+    #submenutitle2 {
+        display: inherit;
+    }
+    .submenu {
+        position: absolute;
+        display: none;
+        margin-top: 5vh;
+        height: 100%;
+    }
+    .submenu input {
+        margin-bottom: 1vh;
+    }
+    #submenuform {
+        padding-top:50%;
+        background-color: rgba(255, 255, 255, 1);
+        width: 195px !important;
+    }
+    #products_margin {
+        padding-top: 15vh;
+    }
+    #submenuToggler {
+        display: inherit;
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        outline: inherit;
+    }
+    .plus_margin {
+        margin-left: 2%;
+        margin-top: 30%;   
+    }
 }
-
 
 footer a,
 footer p {
