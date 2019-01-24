@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/style2.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
-<link rel="icon" href="/media/logo/logo_tab.png">
+<link rel="icon" href="media/logo/logo_tab.png">
 
 <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans:400,600" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">

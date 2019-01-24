@@ -134,10 +134,10 @@
 
                 echo "
 
-                <div class='row row_products'>
-                    <div class='col-xl-7 col-lg-7 productinfo'>
-                      <h4 class='oswald_title' id='producttitle'> ". $linha['title'] ." </h4>
-                      <h2 class='oswald_title title_margin text-uppercase mt-3'>Sob Orçamento</h2>
+                <div class='row row_orcamento'>
+                    <div class='col-xl-8 col-lg-8 productinfo'>
+                      <h4 class='oswald_title'> ". $linha['title'] ." </h4>
+                      <h5 id='orcamento'>Sob Orçamento</h2>
                       <form action=''>
                           <div class='row'>
                               <div class='col-lg-6'>

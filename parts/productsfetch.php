@@ -66,6 +66,8 @@ if (isset($_POST['lampadasdefenda'])) {
     header('Location: produtos.php?message=lampadadefenda');
 } else if (isset($_POST['projetor'])) {
     header('Location: produtos.php?message=projetor');
+    } else if (isset($_POST['usados'])) {
+    header('Location: produtos.php?message=usados');
 } else {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Observacao' AND subcategory = 'Oftalmoscopicos'");
 }
@@ -170,6 +172,9 @@ if ($_GET['message'] == 'lampadasdefenda') {
 } else if ($_GET['message'] == 'projetor') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Lampadas' AND subcategory = 'Projectores'");
     print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Projector\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
+    } else if ($_GET['message'] == 'usados') {
+    $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Usados' AND subcategory = 'Usados'");
+    print"<script> $('#sub_menu5').addClass('transition_none'); $('#sub_menu5').collapse(); $('#sub_menu5').removeClass('transition_none'); $('input[value=\'Usados\']').focus().addClass('dontLooseFocus'); category5selected=true; </script>";
 } else {
     header('Location: produtos.php?message=oftalmoscopios');
 }

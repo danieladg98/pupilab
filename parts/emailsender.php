@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
           $assunto = 'Contacto Pupilab'; // Give the email a subject
           $mensagem = '
           Obrigado por entrar em contacto com a Pupilab!
-          Iremos responder com a maior brevidade possivel. 
+          Iremos responder com a maior brevidade possível. 
           ------------------------
           Email: ' . $escapedMail . '
           ------------------------
