@@ -32,12 +32,12 @@
                 <div class="text-center">
                     <ul class="list-unstyled list-inline">
                         <li class="list-inline-item">
-                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                            <a href="https://www.facebook.com/Pupilab-817111421964957/" class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                            <a href="https://www.linkedin.com/in/pupilab-lda-519573a9/" class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>

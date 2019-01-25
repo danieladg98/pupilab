@@ -76,7 +76,6 @@
                                 <div class="collapse collapsesubmenu" id="sub_menu3">
                                     <div class="col-1 in">
                                         <input type="submit" name="oct" value="OCT">
-                                        <input type="submit" name="paquimetro" value="Paquimetro">
                                         <input type="submit" name="biometro" value="Biometro">
                                         <input type="submit" name="topografo" value="Topógrafo">
                                         <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
@@ -137,7 +136,7 @@
                 <div class='row row_orcamento'>
                     <div class='col-xl-8 col-lg-8 productinfo'>
                       <h4 class='oswald_title'> ". $linha['title'] ." </h4>
-                      <h5 id='orcamento'>Sob Orçamento</h2>
+                      <h5 id='orcamento'>Sob Consulta</h2>
                       <form action=''>
                           <div class='row'>
                               <div class='col-lg-6'>

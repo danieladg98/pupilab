@@ -32,8 +32,6 @@ if (isset($_POST['lampadasdefenda'])) {
     header('Location: produtos.php?message=arkeratometros');
 } else if (isset($_POST['oct'])) {
     header('Location: produtos.php?message=oct');
-} else if (isset($_POST['paquimetro'])) {
-    header('Location: produtos.php?message=paquimetro');
 } else if (isset($_POST['biometro'])) {
     header('Location: produtos.php?message=biometro');
 } else if (isset($_POST['topografo'])) {
@@ -60,8 +58,8 @@ if (isset($_POST['lampadasdefenda'])) {
     header('Location: produtos.php?message=oftalmoscopio');
 } else if (isset($_POST['retinoscopio'])) {
     header('Location: produtos.php?message=retinoscopio');
-} else if (isset($_POST['frontofocometro'])) {
-    header('Location: produtos.php?message=frontofocometro');
+    } else if (isset($_POST['frontosfocometrodigitais'])) {
+    header('Location: produtos.php?message=frontofocometrosdigitais');
 } else if (isset($_POST['lampadadefenda'])) {
     header('Location: produtos.php?message=lampadadefenda');
 } else if (isset($_POST['projetor'])) {
@@ -121,9 +119,6 @@ if ($_GET['message'] == 'lampadasdefenda') {
 } else if ($_GET['message'] == 'oct') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'OCT'");
     print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'OCT\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
-} else if ($_GET['message'] == 'paquimetro') {
-    $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Paquimetro'");
-    print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Paquimetro\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
 } else if ($_GET['message'] == 'biometro') {
     $resultados = mysqli_query($conn, "select id, title, subtitle, description, category, subcategory, image, pdf, full_article from produtos where active = 1 AND category = 'Diagnostico / Medicao' AND subcategory = 'Biometro'");
     print"<script> $('#sub_menu3').addClass('transition_none'); $('#sub_menu3').collapse(); $('#sub_menu3').removeClass('transition_none'); $('input[value=\'Biometro\']').focus().addClass('dontLooseFocus'); category3selected=true; </script>";
