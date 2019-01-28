@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="collapse collapsesubmenu" id="sub_menu3">
                                     <div class="col-1 in">
-                                        <input type="submit" name="oct" value="OCT - para seg. anterior">
+                                        <input type="submit" name="oct" value="OCT - p/ Seg. Anterior">
                                         <input type="submit" name="biometro" value="Biometro">
                                         <input type="submit" name="topografo" value="Topógrafo">
                                         <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
