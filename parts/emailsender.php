@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 
           ';
 
-          $headers = 'From:noreply@vinylrecordslda.com'; // Nome de quem envia o email
+          $headers = 'From:comercial@pupilab.com'; // Nome de quem envia o email
           mail($para, $assunto, $mensagem, $headers); // Envia o email
 
           mysqli_close($conn);

@@ -66,7 +66,7 @@
                                         <input type="submit" class="duohover1" name="frontofocometrosinterna" value="L/ Interna">
                                         <input id="categorybreak" class="duohover2" type="submit" name="frontofocometrosdigitais" value="Frontofocómetros">
                                         <input type="submit" class="duohover2" name="frontofocometrosdigitais" value="Digitais">
-                                        <input type="submit" name="arkeratometros" value="Arkeratómetros">
+                                        <input type="submit" name="arkeratometros" value="AR Keratómetros">
                                     </div>
                                 </div>
 
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="collapse collapsesubmenu" id="sub_menu3">
                                     <div class="col-1 in">
-                                        <input type="submit" name="oct" value="OCT">
+                                        <input type="submit" name="oct" value="OCT - para seg. anterior">
                                         <input type="submit" name="biometro" value="Biometro">
                                         <input type="submit" name="topografo" value="Topógrafo">
                                         <input type="submit" name="campimetroperimetro" value="Campímetro/Perímetro">
